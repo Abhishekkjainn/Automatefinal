@@ -1,0 +1,671 @@
+body{
+    margin: 0;padding: 0;
+    font-family: 'Poppins';
+}
+.emptyspace{
+    width: 100%;
+    height: 100px;
+}
+/*Header styling*/
+.header{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerinside{
+    width: 95%;
+    height: 140px;
+    background-color: rgb(198, 198, 198);
+    border-radius: 15px;
+    background-image: url("mapback2.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*header styling done*/
+
+/*pagination styling*/
+.pagination{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paginationinside{
+    width: 95%;
+    height: 70px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.paginationsdiv{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination1{
+    background-color: #4285F4;
+}
+/*pagination styling over*/
+/*Animation*/
+.fadeanimation{
+    animation: fader 1s;
+}
+/*animation*/
+
+/*Mainform Div*/
+.mainform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 470px;
+}
+.mainforminside{
+    width: 90%;
+    height: 450px;
+    background-color:rgb(234, 234, 234);
+    border-radius:25px ;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pageform{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(228, 228, 228);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.Page4,.Page2,.Page3,.Page5{
+    display: none;
+}
+
+.pagehead{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgba(48, 48, 48, 1);
+    text-align: center;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.pickupdropdiv{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.pickupdropinside{
+    width: 90%;
+    height: 165px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pickupinputdiv,.dropinputdiv{
+    width: 95%;
+    height: 49%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logobook{
+    width: 25%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sep{
+    padding: 0;margin: 0;
+    height: 0.5px;
+    width: 80%;
+    background-color: rgb(201, 201, 201);
+    border: none;
+}
+.pickupinput,.dropinput{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pickuplistinp,.droplistinp{
+    width: 85%;
+    height: 40px;
+    border: none;
+    border-bottom: 1.5px solid rgb(68, 68, 68);
+    transform: translateY(-5%) translateX(-5%);
+}
+.labelinput{
+    font-size: 12px;
+    transform: translateX(-280%);
+    font-weight: 500;
+    color: grey;
+}
+.peoplehosteldiv{
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.noofpeople,.checkhostel{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    margin: 5%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.headpeople{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(53, 53, 53);
+    text-align: center;
+    height: 30%;
+}
+.noofpeopleselect{
+    width: 50%;
+    height: 45%;
+    border: none;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: rgb(53, 53, 53);
+}
+.checkboxhostel{
+    width: 100%;
+    height: 45%;
+    background-color: rgb(79, 79, 79);
+}
+/*checkbox style*/
+.toggler {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggler input {
+  display: none;
+}
+
+.toggler label {
+  display: block;
+  position: relative;
+  width: 72px;
+  height: 36px;
+  border: 1px solid #d6d6d6;
+  border-radius: 36px;
+  background: #e4e8e8;
+  cursor: pointer;
+}
+
+.toggler label::after {
+  display: block;
+  border-radius: 100%;
+  background-color: #d7062a;
+  content: '';
+  animation-name: toggler-size;
+  animation-duration: 0.15s;
+  animation-timing-function: ease-out;
+  animation-direction: forwards;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+}
+
+.toggler label::after, .toggler label .toggler-on, .toggler label .toggler-off {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 26px;
+  height: 26px;
+  transform: translateY(-50%) translateX(-50%);
+  transition: left 0.15s ease-in-out, background-color 0.2s ease-out, width 0.15s ease-in-out, height 0.15s ease-in-out, opacity 0.15s ease-in-out;
+}
+
+.toggler input:checked + label::after, .toggler input:checked + label .toggler-on, .toggler input:checked + label .toggler-off {
+  left: 75%;
+}
+
+.toggler input:checked + label::after {
+  background-color: #50ac5d;
+  animation-name: toggler-size2;
+}
+
+.toggler .toggler-on, .toggler .toggler-off {
+  opacity: 1;
+  z-index: 2;
+}
+
+.toggler input:checked + label .toggler-off, .toggler input:not(:checked) + label .toggler-on {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.toggler .path {
+  fill: none;
+  stroke: #fefefe;
+  stroke-width: 7px;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+@keyframes toggler-size {
+  0%, 100% {
+    width: 26px;
+    height: 26px;
+  }
+
+  50% {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@keyframes toggler-size2 {
+  0%, 100% {
+    width: 26px;
+    height: 26px;
+  }
+
+  50% {
+    width: 20px;
+    height: 20px;
+  }
+}
+ 
+/*checkboxstyle ends*/
+
+.proceedbutton{
+    width: 180px;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    background-color: #4285F4;
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.proceedbutton1{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50%);
+}
+
+
+/*available drivers div page2*/
+.availabledriversdiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(8%);
+}
+.availabledriversdivinside{
+    width: 90%;
+    height: 350px;
+    border-radius: 25px;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.drivers{
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.driverimg{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #d7062a;
+    /* transform: translateY(20%) translateX(20%); */
+    background-size: cover;
+    background-position: center;
+}
+.driver1img{
+    background-image: url("AnandS.jpg");
+}
+.driver2img{
+    background-image: url("Vvijay.jpeg");
+}
+.driver3img{
+    background-image: url("AnandD.jpeg");
+}
+.driver4img{
+    background-image: url("AnandS.jpg");
+}
+.driver5img{
+    background-image: url("VinothR.jpeg");
+}
+
+.driverinfo{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-10%);
+}
+.confirmridebutton{
+    width: 70%;
+    border: none;
+    background-color: #4285F4;
+    height: 40px;
+    border-radius:40px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin: 0;
+    padding: 0;
+    transform: translateY(30%);
+}
+.namedriver{
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(36, 36, 36);
+    transform: translateY(20%);
+}
+.mainfarediv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+}
+.faredisplay{
+    width: 240px;
+    height:60px;
+    background-color: #313131;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+    transform: translateY();
+}
+
+
+.passengerdetails{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(15%);
+}
+.passinp{
+    width: 75%;
+    height: 50px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.buttontoproceed{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(160%);
+}
+.page3label{
+    font-size: 14px;
+    color: rgba(92, 92, 92, 1);
+    font-weight: 700;
+    transform: translateX(-75%);
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.driverconfirmdiv{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.driverconfirminside{
+    width: 85%;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.driverconfirmimagediv{
+    width: 32%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.driverconfirmimageinside{
+    width: 80px;
+    height: 80px;
+    background-color: #4285F4;
+    border-radius: 50%;
+}
+.driverconfirminfodiv{
+    width: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#driverconfirmname2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #313131;
+    letter-spacing: 1.5px;
+}
+#idconfirmdriver2{
+    font-size: large;
+    font-weight: 500;
+    color: rgb(69, 69, 69);
+}
+.pickupconfirmdiv,.dropconfirmdiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.pickupconfirminside,.dropconfirminside{
+    width: 85%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.pickconfirmlogo,.dropconfirmlogo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pickconfirmlocation,.dropconfirmlocation{
+    width: 70%;
+    text-align: center;
+}
+.fareconfirmdiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fareconfirminside{
+    width: 85%;
+    background-color: #313131;
+    height: 65px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.button4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80%);
+} 
+
+.vehicleinfo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vehicleinfoinside{
+    width: 85%;
+    height: 140px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.uppervehicleinfo,.lowervehicleinfo{
+    width: 100%;
+    height: 49%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.autonumber{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+.autohead{
+    font-size: 12px;
+    transform: translateX(-15%);    
+}
+.versep{
+    height: 50px;
+}
+.langhead{
+    transform: translateX(-50%);
+}
+.languages{
+    width: 45%;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.sep2{
+    height: 2px;
+}
+.datehead,.timehead{
+    font-size: 14px;
+    transform: translateX(-90%);
+}
+.timehead{
+    transform: translateX(-150%) translateY(-25%);
+}
+.time{
+    font-size: 18px;
+}
+.farecall{
+    margin-top: 10px;
+}
+.callbuttondiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80%);
+}
+.callbutton{
+    width: 200px;
+    background-color: #4285F4;
+    height: 60px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+@keyframes fader {
+    0%{
+        transform: translateY(0%);
+        filter: brightness(1);
+    }
+    100%{
+        transform: translateY(-100%);
+        filter: brightness(0);
+        display: none;
+    }
+    
+}

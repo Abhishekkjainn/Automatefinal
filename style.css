@@ -1,0 +1,2382 @@
+body{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin: 0;padding: 0;
+    letter-spacing: 3px;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+
+}
+html{
+    overflow-x:hidden ;
+    overflow-y: scroll;
+}
+.container{
+    width: 100%;
+}
+.Header{
+    width: 100%;
+    height: 60px;
+}
+.headerimage{
+    position: relative;
+    float:right;
+    transform: translateX(-10px);
+}
+/*heading part*/
+.heading{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    transform: translateY(20px) translateX(15px);
+
+}
+.mainheading{
+    font-size: 34px;
+    font-weight: 500;
+}
+.subheading{
+    font-size: 22px;
+    font-weight: 100;
+    transform: translateY(-15px) translateX(3px);
+}
+.colorsub{
+    color: gold;
+    font-weight: 600;
+}
+/*heading part over*/
+/*booking page main div*/
+.bookpagediv{
+    height: 335px;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    transform: translateY(20px);
+    padding-left: 2.5%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+.bookdivmain{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    border-radius: 25px;
+    background-image: url("mapback2.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 5%;
+}
+.knowfareautodiv{
+    width: 45%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.knowfarediv{
+    height: 48%;
+    width: 98%;
+    background-color: #161616;
+    margin-bottom:10%;
+    border-radius: 25px;
+    /* border: 1px solid #979797; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: url("knowfareback.png"); */
+    background-size: cover;
+    background-position: center;
+}
+.knowfareheader{
+   background-color: #0077b5;
+}
+.knowfarebutton{
+    width: 85%;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: #b8afaf00;
+    /* border: 2px solid #ffffff00; */
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    transform: translateY(15px);
+    font-size: 16px;
+    background-image: url("codioful-formerly-gradienta-LeG68PrXA6Y-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+.knowfarebutton:hover,.bookfordaybutton:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    border: none;
+    background-image: url("knowfareback.png");
+}
+.knowfareimg{
+    transform: translateY(0px);
+}
+.autofordaydiv{
+    height: 48%;
+    width: 100%;
+    background-color: #343434;
+    border-radius: 25px;
+    /* border: 1px solid #ffffff00; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("day.png");
+    background-size: cover;
+    background-position: center;
+}
+/*auto animation starts*/
+.containerauto {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.autoanimconatiner{
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 25px;
+  background-color: #83c5be;
+  scale: 1;
+}
+.road {
+  position: absolute;
+  background-color: #333;
+  border-radius:20px;
+  height:5px;
+  width:75%;
+  top:75%;
+  left:12%;
+  overflow:hidden;
+}
+.road:before {
+  content:"";
+  position: absolute;
+  background-color: #83c5be;
+  width:30px;
+  height:5px;
+  border-radius:5px; 
+  animation: move 1s linear infinite reverse;
+}
+.road:after {
+  content:"";
+  position: absolute;
+  width:15px;
+  height:5px;
+  background-color: #333;
+  border-radius:5px; 
+  box-shadow: 27px 0 #333;
+  animation: move 1s linear infinite reverse;
+}
+@keyframes move {  
+  from { left: -100px; }
+    to { left: 200px; }
+}
+.car {
+  position: absolute;
+  height:0;
+  width:50px;
+  z-index:2;
+  top:25%;
+  left:22%;  
+}
+.car:before {
+  content:"";
+  position: absolute;
+  left:60px;
+  top:30px;
+}
+.car:after {
+  content:"";
+  position: absolute; 
+  left:-22px;
+  top:20px;
+  transform: rotate(16deg);
+}
+.clouds {
+  position: absolute;
+  background-color: rgba(255,255,255,0.5);
+  width:35px;
+  height:10px;
+  border-radius: 20px;
+  top:0px;
+  left:50px;
+  z-index:1;
+  scale: 0.5;
+  box-shadow: 130px 50px rgba(255,255,255,0.5), -100px 20px rgba(255,255,255,0.5);
+  animation: cloud 1.5s linear infinite reverse;
+}
+@keyframes cloud {  
+  from{left:-150px;}
+  to{left: 400px;}
+} 
+.clouds2 {
+    position: absolute;
+    background-color: rgba(255,255,255,0.5);
+    width: 50px;
+    height:10px;
+    border-radius: 20px;
+    top: 50px;
+    left:200px;
+    z-index:1;
+    scale: 0.5;
+    box-shadow: 130px 50px rgba(255,255,255,0.5), -100px 20px rgba(255,255,255,0.5);
+    animation: cloud 3s linear infinite reverse;
+}
+.wheels{
+  position: absolute;
+  top: 64%;
+  left: 29.5%;
+  display: flex;
+}
+.rightwheel{
+  position: absolute;
+  left: 330%;
+}
+.lwheel,.rwheel{
+  animation: spin 0.5s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} 
+/*auto animation ends*/
+.autofordayimg{
+    transform: translateY(-15px);
+}
+.bookfordaybutton{
+    width: 85%;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: #979797;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+.bookridebutton{
+    width: 85%;
+    height: 65px;
+    border: none;
+    border-radius: 20px;
+    background-color: #1c1c1c;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transform: translateY(-15px);
+}
+.bookridebutton:hover{
+    background-color: #f2dd1e;
+    color: rgb(39, 39, 39);
+    transition: 0.2s;
+}
+/*booking page main div ends*/
+.cat1carousel{
+    width: 200px;
+    height: 130px;
+    background-color: #3A81F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    border-radius: 15px;
+    margin: 20px;
+    scale: 1.1;
+}
+.cat1carousel:hover{
+    background-color: black;
+}
+.cat2carousel{
+    background-color: #fdbd00;
+}
+.cat3carousel{
+    background-color: #e44335;
+}
+.cat4carousel{
+    background-color: #50c878;
+}
+.cat5carousel{
+    background-color: #e44335;
+}
+.cat6carousel{
+    background-color: gold;
+}
+.cattext{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    transform: translateY(5px);
+}
+.catimg{
+    transform: translateY(10px);
+}
+.categoriescarousel{
+    height:20vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0;padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    transform: translateY(50px);
+}
+.greatdealheading{
+    transform: translateY(35px) translateX(20px);
+}
+/*Deals page done*/
+/*Bestplaces div*/
+.bestplacesdiv{
+    transform: translateY(75px);
+    width: 102%;
+}
+/*flip card design*/
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    font-family: sans-serif;
+}
+  .title {
+    font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+.flip-card-back {
+  background:#000000 ;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: rotateY(180deg);
+  scale: 1.1;
+}
+.VITVellore{
+  background-image: url("VITimg.jpeg");
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+.Karigirihills{
+  background-image: url("karigiri.jpg");
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+.Laxminarayantemple{
+  background-image: url("goldentemple.jpg");
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+.Vellorefort{
+  background-image: url("vellorefort.jpg");
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+.Balamathihills{
+  background-image: url("Palamathi\ Hills.jpg");
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+.Mahadevhills{
+  background-image: url("Mahadevhills.jpg");
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+.Vallimalaitemple{
+  background-image: url("vallimalaitemple.jpg");
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+.Ratnagiritemple{
+  background-image: url("ratnagiritemple.jpg");
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+.Virinjipuramtemple{
+  background-image: url("virinjipuramtemple.jpg");
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+/*flip card design ends*/
+.bestplacesheading{
+    font-size: 20px;
+    transform: translateX(20px);
+}
+.place1{
+    width: 220px;
+    height: 150px;
+    background-color: #34343400;
+    margin:20px;
+    border: none;
+    border-radius: 15px;
+    background-image:url("VIT-Vellore-among-top-12-engineering-and-technology-institutes-i_pbQT6YO.jpg") ;
+    background-size: cover;
+    background-position: center;
+}
+.placescarousel{
+    height:30vh;
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0;padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    transform: translateY(0px);
+}
+/*places carousel ends*/
+/*offers div*/
+.bestoffersdiv{
+    width: 100%;
+    background-color: #fe545400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+.offer1{
+    width: 90%;
+    height: 120px;
+    background-color: #3A81F1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 25px;
+    transform: translateY(100px) translateX(0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firsttextoffer{
+    text-align: left;
+    width: 65%;
+}
+.imgpriceoffer{
+    width: 30%;
+    text-align: right;
+}
+.offer1head{
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.priceoffer{
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+.locationsoffer{
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.offerimg{
+    transform: translateX(-5%);
+}
+.offertwo{
+    background-color: #FDBD00;
+}
+.offerthree{
+    background-color: #E44335;
+}
+.offerfour{
+    background-color: #50C878;
+}
+.offerdivhead{
+    font-size: 22px;
+    font-weight: bold;
+    transform: translateX(-10%) translateY(60px);
+}
+
+.offercarousel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bottomgap{
+    height: 15vh;
+}
+
+
+
+
+/*BOOKING PAGE STYLING*/
+.headertagbookpage{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("mapback2.png");
+    background-size: cover;
+    background-position: center;
+}
+.headerimgbookpage{
+    transform: translateY(30%);
+}
+.bookcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bookform{
+    width: 85%;
+    height: 600px;
+    background-color: #EEEEEE;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(10%);
+}
+.bookformheading{
+    color: #565656;
+    transform: translateY(-220%);
+    font-weight: bolder;
+    font-size: 28px;
+}
+.peoplecounter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+}
+.headingcounter{
+    color: #565656;
+    font-weight: bolder;
+    font-size: 16px;
+    margin: 0;
+}
+.wrapper{
+    height: 60px;
+    width:70% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transform: translateY(50%);
+    font-size: 1.2rem;
+    text-align: center;
+    color: #1c1c1c;
+    font-weight: 700;
+}
+.wrapper span{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+}
+.wrapper span.num{
+    font-size: 25px;
+    border-right: 2px solid rgba(0,0,0,0.2);
+    border-left: 2px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+.findridebuttonbookpage{
+    width: 203px;
+    height: 55px;
+    border: none;
+    border-radius: 20px;
+    background-color: #3A81F1;
+    font-size: 24px;
+    font-weight:bold ;
+    color: white;
+    transform: translateY(110%);
+}
+.findridebuttonbookpage:hover{
+    background-color: #282828;
+
+}
+.pickdropdiv{
+    background-color: white;
+    width: 90%;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+    display: flex;justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-45px);
+}
+.pickuplocation,.droplocation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 82px;
+}
+.picklocationinput,.droplocationinput{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-10px);
+}
+.inputlocation{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #717171;
+    transform: translateY(-10px);
+}
+.picktext,.droptext{
+    font-size: 12px;
+    transform: translateX(-80px) translateY(0px);
+    color: #646464;
+}
+.pickimg,.dropimg{
+    transform: translateX(-20px);
+}
+.sep{
+    background-color: #B9B9B9;
+    width: 100%;
+    height: 0.1px;
+    border: none;
+}
+/*fare div*/
+.farediv{
+    width: 80%;
+    background-color: #393939;
+    border: none;
+    border-radius: 15px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(130%) translateX(12%);
+    font-size: 24px;
+    color: white;
+    font-weight: 900;
+    display: none;
+}
+/*farediv ends*/
+.Availableridesdiv{
+    width: 90%;
+    height: 500px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    transform: translateY(24%) translateX(5%);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: none;
+}
+.driver1{
+    width: 90%;
+    height: 100px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+}
+.driverimgbookingpage{
+    width: 30%;
+    height:100%;
+    background-color: #3a80f100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drivernamebookpage{
+    width:95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name{
+    width: 180px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 900;
+    transform:translateX(8%) ;
+}
+.confirmbooking{
+    width: 80%;
+    height: 30px;
+    border: none;
+    border-radius: 40px;
+    background-color: #3A81F1;
+    transform: translateY(-15%);
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+.confirmbooking:hover{
+    color: white;
+    background-color: black;
+}
+.information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.driverimg{
+    border-radius: 50%;
+}
+/*places to visit*/
+.placestovisit{
+    transform: translateY(150px);
+    display: block;
+}
+.placeshead{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.placeimage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+} 
+.placeone{
+    width: 150px;
+    height: 150px;
+    background-color: #d9d9d900;
+    margin: 20px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+.placeone:hover{
+    scale:1.1;
+    transition: 0.2s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.ads{
+    width: 100%;
+    height: 300px;
+}
+/*Booking form page ends*/
+/*categories pages (MOuntain category)*/
+.headermountainpage,.headertemplepage,.headerrestaurantpage,.headerhotelpage{
+    overflow: hidden;
+    height: 180px;
+    background-color:#3A81F1;
+    background-image: url("mountain2.png");
+    background-position: center;
+}
+.headertemplepage{
+    background-image: url("8516755.jpg");
+    background-size: cover;
+    background-position: -10px -10px;
+}
+.headerrestaurantpage{
+    background-image: url("restaurants.png");
+    background-size: cover;
+}
+.headerhotelpage{
+    background-image: url("hotel.jpg");
+    background-size: cover;
+}
+.headerhospitalpage{
+    background-image: url("hospital.jpg");
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+.headertheatrepage{
+    background-image: url("theatre.png");
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+.headeroffer1page{
+    overflow: hidden;
+    height: 180px;
+    background-color:#3A81F1;
+}
+.logomountainpage{
+    transform: translateX(5px) translateY(5px);
+}
+.headermountaintext,.headertempletext,.headerresttext,.headerhoteltext,.headeroffer1text{
+    font-size: 32px;
+    font-weight: bolder;
+    transform: translateY(-50%) translateX(15%);
+}
+.headertempletext{
+    transform:translateY(-100%) translateX(10%);
+    color: rgb(0, 0, 0);
+}
+.headerresttext{
+    transform: translateY(-100%) translateX(2%);
+    color: white;
+}
+.bluetext{
+    color: #3A81F1;
+}
+.Yellowtext{
+    color: #FFFC00;
+}
+.whitetext{
+    color: white;
+}
+.greentext{
+    color: #50C878;
+}
+.redtext{
+    color:#E44335 ;
+}
+.mountainsdiv,.templesdiv,.Restaurantdiv,.hoteldiv,.hospitaldiv,.theatrediv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform: translateY(5px);
+}
+.mountain1,.temple1,.restaurant1,.hotel1,.hospital1,.theatre1{
+    width: 44%;
+    height: 170px;
+    background-color: #c5c5c5;
+    margin: 10px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.theatreone{
+    background-image: url("vishnu\ cinema.jfif");
+    background-size: cover;
+    background-position: center;
+}
+.theatretwo{
+    background-image: url("aascars.jfif");
+    background-size: cover;
+    background-position: center;
+}
+.theatrethree{
+    background-image: url("pvrvelo.jfif");
+    background-size: cover;
+    background-position: center;
+}
+.theatrefour{
+    background-image: url("galaxy.jfif");
+    background-size: cover;
+    background-position: center;
+}
+.hospitalone{
+    background-image: url("cmc.png");
+    background-size: cover;
+    background-position: center;
+}
+.hospitaltwo{
+    background-image: url("naruvi.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.hospitalthree{
+    background-image: url("ranipetcmc.jfif");
+    background-size: cover;
+    background-position: center;
+}
+.hospitalfour{
+    background-image: url("bagayam.jfif");
+    background-size: cover;
+    background-position: center;
+}
+.mountainone{
+    background-image: url("karigiri.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.mountainone{
+    background-image: url("karigiri.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.mountaintwo{
+    background-image: url("Mahadevhills.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.mountainthree{
+    background-image: url("Palamathi\ Hills.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.mountainfour{
+    background-image: url("vallimalaitemple.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.mountainfive{
+    background-image: url("cupandsaucer.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.mountainsix{
+    background-image: url("tirthagirihills.png");
+    background-size: cover;
+    background-position: center;
+}
+.templeone{
+    background-image: url("goldentemple.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.templetwo{
+    background-image: url("singri.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.templethree{
+    background-image: url("vellorefort.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.templefour{
+    background-image: url("Mahadevhills.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.templefive{
+    background-image: url("navasaibaba.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.templesix{
+    background-image: url("virinjipuramtemple.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.templeseven{
+    background-image: url("tirupativellore.png");
+    background-size: cover;
+    background-position: center;
+}
+.templeeight{
+    background-image: url("ratnagiritemple.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.templenine{
+    background-image: url("vallimalaitemple.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.templeten{
+    background-image: url("Palamathi\ Hills.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.templeeleven{
+    background-image: url("Mahadevhills.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.restaurant1,.hotel1{
+    background-size: cover;
+    background-position: center;
+}
+.restaurantone{
+    background-image: url("hundredsheritage.jpg");
+}
+.restauranttwo{
+    background-image: url("kfcvellore.jpg");
+}
+.restaurantthree{
+    background-image: url("vellorekitchengn.jpg");
+}
+.restaurantfour{
+    background-image: url("donuthouse.jpg");
+}
+.restaurantfive{
+    background-image: url("fortunepark.jpg");
+}
+.restaurantsix{
+    background-image: url("rangalaya.jpg");
+}
+.restaurantseven{
+    background-image: url("benzpark.jpg");
+}
+.restauranteight{
+    background-image: url("barbequenation.webp");
+}
+.restaurantten{
+    background-image: url("jyothihotel.jpg");
+}
+.restauranteleven{
+    background-image: url("darlingresidence.jpg");
+}
+.restauranttwelve{
+    background-image: url("khannafiesta.jpg");
+}
+.restaurantthirteen{
+    background-image: url("pulusu.avif");
+}
+.restaurantfourteen{
+    background-image: url("nammaveedu.avif");
+}
+.restaurantfifteen{
+    background-image: url("aaryaas.png");
+}
+.restaurantsixteen{
+    background-image: url("royalgrand.jpg");
+}
+.restaurantseventeen{
+    background-image: url("pandian.jpg");
+}
+.restauranteightteen{
+    background-image: url("earthplate.jpg");
+}
+.hotelone{
+    background-image: url("fortunepark.jpg");
+}
+.hoteltwo{
+    background-image: url("rangalaya.jpg");
+}
+.hotelthree{
+    background-image: url("benzpark.jpg");
+}
+.hotelfour{
+    background-image: url("darlingresidence.jpg");
+}
+.hotelfive{
+    background-image: url("khannafiesta.jpg");
+}
+.hotelsix{
+    background-image: url("smsgrandinn.jpg");
+}
+.hotelseven{
+    background-image: url("aloka.avif");
+}
+.hoteleight{
+    background-image: url("mountparadise.webp");
+}
+.hotelnine{
+    background-image: url("grandkrishna.jpg");
+}
+.hotelten{
+    background-image: url("grt.jpg");
+}
+.hoteleleven{
+    background-image: url("annamalai.avif");
+}
+.hoteltwelve{
+    background-image: url("srinivasa.webp");
+}
+.hotelthirteen{
+    background-image: url("pulusu.avif");
+}
+.hotelfourteen{
+    background-image: url("royalgrand.jpg");
+}
+.placename{
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-radius:15px;
+    transform: translateY(-15px);
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    background-color: #00000040;
+    backdrop-filter: blur(10px);
+    color: rgb(255, 255, 255);
+}
+/* .templename{
+    background-color: #FDBD00;
+    color: black;
+}
+.restaurantname{
+    background-color: #E44335;
+} */
+/* .hotelname{
+    background-color: #50C878;
+    color: black;
+} */
+/* .hospitalname{
+    background-color: #e44335;
+} */
+.goback{
+    width: 80%;
+    height: 70px;
+    border: none;
+    background-color: #FFFC00;
+    font-size: 22px;
+    border-radius: 20px;
+    transform: translateY(30px);
+    margin-bottom: 80px;
+}
+/*confirm booking page*/
+.maincontentconfirmbookingpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #20151500;
+}
+.cnfbookingpagehead{
+    font-size: 18px;
+    font-weight: bold;
+    transform: translateY(-20px);
+}
+.driverimagecnfpage{
+    width: 130px;
+    height: 130px;
+    background-color: #343434;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+.drivernamecnfpage{
+    font-size: 24px;
+    font-weight:bolder;
+    transform: translateY(30px);
+}
+.driverimgimgcfnpage{
+    border-radius: 25px;
+    width:130px;
+    height:130px;
+}
+.idnocnfpage{
+    font-size: 16px;
+    color: #606060;
+    transform: translateY(50px);
+    font-weight: bolder;
+}
+.pickupaddresscnfpage,.dropaddresscnfpage{
+    width: 80%;
+    height: 64px;
+    background-color: #34343400;
+    border-radius: 20px;
+    border: 1px solid #767676;
+    transform: translateY(90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pickupimgcnfpg,.dropimgcnfpg{
+    width: 20%;
+    height: 100%;
+    background-color: #28282800;
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pickimgimgcnfpg{
+    transform: translateY(-25%);
+}
+.pickupimgtextcnfpage{
+    font-size:10px ;
+    color: #545454;
+    transform: translateY(-5%) translateX(10%);
+}
+.pickupnamecnfg,.dropnamecnfpg{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+}
+.dropaddresscnfpage{
+    margin-top: 10px;
+}
+.additionalinfocnfpage{
+    width: 80%;
+    height: 320px;
+    background-color: #D9D9D9;
+    transform: translateY(120px);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+}
+.autonolangcnfpage,.farecnfpage,.datetimecnfpage,.buttonscnfpage,.farecnfpageridecompletediv{
+    width: 90%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px;
+    border: 1px solid #7c7c7c;
+
+}
+.buttonscnfpage{
+    background-color: transparent;
+    border: none;
+}
+.autonodivcnfpage,.datedivcnfpage{
+    width: 50%;
+    background-color: #3A81F100;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.languagediv,.timediv{
+    width: 50%;
+    background-color: #50C87800;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.autoheadcnfpage,.languageheadcnfpage,.dateheadcnfpage,.timeheadcnfpage{
+    font-size: 10px;
+    color: #5B5B5B;
+    transform: translateY(120%) translateX(-50%);
+}
+.languageheadcnfpage,.timeheadcnfpage{
+    transform: translateY(45%) translateX(-30%);
+}
+.autonocnfpage,.datecnfpage{
+    font-size: 14px;
+    color: #424242;
+    transform: translateY(-80%);
+}
+.languagetextcnfpage,.timetextcnfpage{
+    font-size: 11px;
+    width: 100%;
+    background-color: #56565600;
+    color: #383838;
+    transform: translateY(-30%)translateX(5%);
+}
+.timetextcnfpage{
+    font-size: 15px;
+    transform: translateX(35px) translateY(-30%);
+}
+.sepcnfpage{
+    height: 100%;
+    transform: translateY(-8px);
+}
+/*farediv*/
+.farecnfpage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fareheadcfnpage{
+    font-size: 14px;
+    color: #585858;
+    transform: translateX(30%);
+}
+.farepricecfnpage{
+    font-size: 18px;
+    font-weight: 900;
+}
+.infobuttoncnfpage{
+    transform: translateX(-40%);
+}
+iframe{
+    background-color: transparent;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*buttons div*/
+.callnowbuttoncnfpage,.ridecompcnfpage{
+    width: 49%;
+    height: 90%;
+    border: none;
+    border-radius: 40px;
+    background-color: #FFFC00;
+    margin: 1%;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+.callnowbuttoncnfpage:hover,.ridecompcnfpage:hover{
+    background-color: #282828;
+    color: white;
+}
+.ridecompcnfpage{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #585858;
+    letter-spacing: 0.25px;
+    overflow: hidden;
+}
+.adscnfpage{
+    width: 80%;
+    height: 50px;
+    background-color: #d3d3d300;
+    transform: translateY(150px);
+    border-radius: 25px;
+}
+/*ride complete page*/
+.headercompleteridepage{
+    height: 150px;
+    background-color: #ffffff;
+    background-image: url("thankyoubanner2.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.headerlogocompletepage{
+    transform: translateY(0%) translateX(180%);
+}
+.textheadercompleteridepage{
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+.qrcoderidecompletepage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 72%;
+    height: 300px;
+    border: 5px solid rgb(178, 178, 178);
+    background-color: #b0b0b0;
+    border-radius: 25px;
+    transform: translateX(17%) translateY(10%);
+}
+.ridecompletefarepage{
+    transform: translateY(150%) translateX(9%);
+    width: 80%;
+}
+.complaintbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border: none;
+    border-radius: 15px;
+    background-color: #ff2f2f;
+    height: 60px;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    transform: translateY(170%) translateX(12%);
+}
+.adscompleteridepage{
+    width: 80%;
+    height: 70px;
+    background-color: #cbcbcb00;
+    transform: translateY(85%) translateX(12%);
+    border-radius: 25px;
+}
+/*know fare page*/
+.knowfareheader{
+    height: 150px;
+    background-color: #3A81F1;
+    color:white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.textheaderknowfarepage{
+    font-size: 36px;
+}
+.knowfaredivknowfarepage{
+    width: 80%;
+    height: 300px;
+    background-color: #bcbcbc;
+    transform: translateY(15%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+}
+.knowfarecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pickupknowfarediv,.dropknowfarediv{
+    transform: translateY(-25%);
+}
+.pickupinputknowfarediv,.dropinputknowfarediv{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+}
+.findfareknowfarediv{
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: #FFFC00;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    transform: translateY(5px);
+}
+.findfareknowfarediv:hover{
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+.farepriceknowfarediv{
+    width: 80%;
+    height: 50px;
+    background-color: #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    transform: translateY(150%);
+}
+.adsknowfarepage{
+    height: 200px;
+    width: 80%;
+    transform: translateY(100px);
+    background-color: #d4d4d4;
+    border-radius: 25px;
+}
+/*offer1 page*/
+.offer1places,.offer2places,.offer3places,.offer4places{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.offer1place1,.offer1place2,.offer1place3,.offer2place1,.offer2place2,.offer2place3,.offer3place1,.offer3place2,.offer3place3,.offer3place4,.offer4place1,.offer4place2,.offer4place3,.offer4place4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.offer1place1img,.offer1place2img,.offer1place3img,.offer2place1img,.offer2place2img,.offer2place3img,.offer3place1img,.offer3place2img,.offer3place3img,.offer3place4img,.offer4place1img,.offer4place2img,.offer4place3img,.offer4place4img{
+    width: 110px;
+    height: 110px;
+    background-color: #393939;
+    border-radius: 20px;
+    margin: 10px;
+}
+.offer1place1img{
+    background-image:url("goldentemple.jpg");
+    background-size:cover;
+    background-position:center;
+}
+.offer1place2img{
+    background-image:url("Palamathi\ Hills.jpg");
+    background-size:cover;
+    background-position:center;
+}
+.offer1place3img{
+    background-image:url("vellorefort.jpg");
+    background-size:cover;
+    background-position:center;
+}
+.offer2place1img{
+    background-image:url("vellorefort.jpg");
+    background-size:cover;
+    background-position:center;
+}
+.offer2place2img{
+    background-image:url("ratnagiritemple.jpg");
+    background-size:cover;
+    background-position:center;
+}
+.offer2place3img{
+    background-image:url("tirthagirihills.png");
+    background-size:cover;
+    background-position:center;
+}
+.offer3place1img{
+    background-image:url("vellorezoo.jfif");
+    background-size:cover;
+    background-position:center;
+}
+.offer3place2img{
+    background-image:url("singri.jpg");
+    background-size:cover;
+    background-position:center;
+}
+.offer3place3img{
+    background-image:url("goldentemple.jpg");
+    background-size:cover;
+    background-position:center;
+}
+.offer4place1img{
+    background-image:url("Mahadevhills.jpg");
+    background-size:cover;
+    background-position:center;
+}
+.offer4place2img{
+    background-image:url("pallikondatemple.jpg");
+    background-size:cover;
+    background-position:center;
+}
+.offer4place3img{
+    background-image:url("virinjipuramtemple.jpg");
+    background-size:cover;
+    background-position:center;
+}
+.offer4place4img{
+    background-image:url("tirupativellore.png");
+    background-size:cover;
+    background-position:center;
+}
+.offer3place4img{
+    background-image:url("vellorefort.jpg");
+    background-size:cover;
+    background-position:center;
+}
+.offer1place1img{
+    margin-top: 20px;
+}
+.offer1place1name,.offer1place2name,.offer1place3name,.offer2place1name,.offer2place2name,.offer2place3name,.offer3place1name,.offer3place2name,.offer3place3name,.offer3place4name,.offer4place1name,.offer4place2name,.offer4place3name,.offer4place4name{
+    width: 60%;
+    font-size: 20px;
+    font-weight: 700;
+}
+.seperatoroffer1{
+    width: 80%;
+    height: 3px;
+    border: none;
+    background-color: rgb(88, 88, 88);
+    transform: translateY(20px);
+}
+.farepriceoffer1{
+    width: 100%;
+    text-align: center;
+    transform: translateY(50px);
+    font-size: 24px;
+    font-weight: 700;
+}
+.additionalbenefitsoffer1{
+    width: 80%;
+    height: 260px;
+    background-color: #D9D9D9;
+    transform: translateY(60%) translateX(12%);
+    border-radius: 25px;
+}
+.additionalbenefitsoffer1heading{
+    text-align: center;
+    transform: translateY(100px);
+}
+.benefitslistoffer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+li{
+    margin: 10px;
+    width: 95%;
+    transform: translateX(10px);
+    font-size: 16px;
+    font-weight: 700;
+}
+.booknowoffer1,.booknowoffer2,.booknowoffer3{
+    width: 80%;
+    height: 70px;
+    border: none;
+    border-radius: 40px;
+    transform: translateY(200px) translateX(12%);
+    background-color: #3A81F1;
+    font-size: 28px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.booknowoffer1:hover,.booknowoffer2:hover,.booknowoffer3:hover{
+    background-color: black;
+    color: white;
+}
+.adsoffer1,.adsoffer2{
+    height: 100px;
+    width: 80%;
+    background-color: #c4c4c400;
+    transform: translateY(250%) translateX(12%);
+    border-radius: 25px;
+}
+/*header colors*/
+.headeroffer2page{
+    background-color: #FDBD00;
+}
+.headeroffer3page{
+    background-color: #E44335;
+}
+.booknowoffer2{
+    background-color: #FDBD00;
+}
+.booknowoffer3{
+    background-color: #E44335 ;
+}
+.booknowoffer4{
+    background-color: #50C878;
+}
+.callnowbuttoncnfpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.headeroffer4page{
+    background-color: #50C878;
+}
+
+/*popup designs*/
+.modal {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 450ms ease-in-out;
+    border-radius: 25px;
+    z-index: 20;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    max-width: 100%;
+    max-height: 500px;
+    overflow: scroll;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .modalridecomplete{
+    max-width: 80%;
+    position: relative;
+    top: 50%;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 200;
+  }
+  
+  .modal-header {
+    padding: 20px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b5b5b5;
+    border-radius: 25px 25px 0 0;
+    color: rgb(32, 32, 32);
+  }
+  
+  .modal-header .title {
+    font-size:1.2rem;
+    padding: 20px;
+    font-weight: bold;
+    background-color: #b5b5b5;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 0.2rem;
+    font-weight: bold;
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(255, 41, 41);
+  }
+  .fareconditions{
+    font-size: 0.1rem;
+    padding: 0;
+  }
+  .modal-body {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 25px 25px;
+    color: #424242;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  select{
+    background-color: transparent;
+  }
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .infobuttoncnfpage{
+    border: none;
+    background-color: transparent;
+  }
+  .modalridecomplete{
+    position: fixed;
+    top: 35%;
+    z-index: 100;
+  }
+  .close-button{
+    background-image: url("cancel.png");
+  }
+
+
+
+/*qr code designing*/
+.qrcodeimg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qrcoderidecompletepage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+/*preloader*/
+/*loader*/
+/* .preloader{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    background: #FFF;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    animation: rotate 2s linear infinite;
+}
+.loader:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 15px;
+    height: 30px;
+    background: #3A81F1;
+    transform: skew(5deg , 60deg) translate(-50%, -5%);
+}
+.loader:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #FFF;
+    transform:translate(-50% , -50%);
+}
+
+@keyframes rotate {
+    0% { transform: rotate(45deg)}
+    30% , 50% , 70%  { transform: rotate(230deg)}
+    40% , 60% , 80% { transform: rotate(240deg)}
+    100% {  transform: rotate(245deg)}
+}
+/*preloader over*/
+/*go back button categories*/
+/*
+.goback:hover{
+    background-color: black;
+    color: white;
+} */
+/*loader 2*/
+.preloader{
+    background-color: rgb(255, 255, 255);
+    height: 130vh;
+    width: 100%;
+    position:fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-17%);
+}
+.pl {
+    display: block;
+    width: 9.375em;
+    height: 9.375em;
+    scale: 0.5;
+  }
+  
+  .pl__arrows,
+  .pl__ring-rotate,
+  .pl__ring-stroke,
+  .pl__tick {
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .pl__arrows {
+    animation-name: arrows42;
+    transform: rotate(45deg);
+    transform-origin: 16px 52px;
+  }
+  
+  .pl__ring-rotate,
+  .pl__ring-stroke {
+    transform-origin: 80px 80px;
+  }
+  
+  .pl__ring-rotate {
+    animation-name: ringRotate42;
+  }
+  
+  .pl__ring-stroke {
+    animation-name: ringStroke42;
+    transform: rotate(-45deg);
+  }
+  
+  .pl__tick {
+    animation-name: tick42;
+  }
+  
+  .pl__tick:nth-child(2) {
+    animation-delay: -1.75s;
+  }
+  
+  .pl__tick:nth-child(3) {
+    animation-delay: -1.5s;
+  }
+  
+  .pl__tick:nth-child(4) {
+    animation-delay: -1.25s;
+  }
+  
+  .pl__tick:nth-child(5) {
+    animation-delay: -1s;
+  }
+  
+  .pl__tick:nth-child(6) {
+    animation-delay: -0.75s;
+  }
+  
+  .pl__tick:nth-child(7) {
+    animation-delay: -0.5s;
+  }
+  
+  .pl__tick:nth-child(8) {
+    animation-delay: -0.25s;
+  }
+  
+  /* Animations */
+  @keyframes arrows42 {
+    from {
+      transform: rotate(45deg);
+    }
+  
+    to {
+      transform: rotate(405deg);
+    }
+  }
+  
+  @keyframes ringRotate42 {
+    from {
+      transform: rotate(0);
+    }
+  
+    to {
+      transform: rotate(720deg);
+    }
+  }
+  
+  @keyframes ringStroke42 {
+    from,
+      to {
+      stroke-dashoffset: 452;
+      transform: rotate(-45deg);
+    }
+  
+    50% {
+      stroke-dashoffset: 169.5;
+      transform: rotate(-180deg);
+    }
+  }
+  
+  @keyframes tick42 {
+    from,
+      3%,
+      47%,
+      to {
+      stroke-dashoffset: -12;
+    }
+  
+    14%,
+      36% {
+      stroke-dashoffset: 0;
+    }
+  }
+/*footer style*/
+/*footer responsiveness*/
+.page5{
+    height:60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.indexspace{
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+}
+.pagefooter{
+    transform: translateY(-20%);
+}
+.footercontainer{
+    height: 70vh;
+    width: 100%;
+    background-color: #313131;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(20%);
+    scale: 0.9;
+}
+.companyname{
+    width: 30%;
+    height: 90%;
+    background-color: #b9b4b400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logofooter{
+    background-color: #4c4c4c;
+    width: 280px;
+    height: 280px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerlogoimg{
+  border-radius: 35px;
+  width: 90%;
+  height: 90%;
+}
+.namefooter{
+    font-size: 2.5rem;
+    color: rgb(30, 30, 30);
+}
+.footercontent{
+    width: 68%;
+    height: 100%;
+    background-color: #96969600;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    transform: translateY(-8%);
+}
+.driverssection{
+    width:100%;
+    height: 100%;
+    background-color: #f6dea800;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.footerheading{
+  color: rgb(222, 222, 222);
+  font-size: 1.1rem;
+}
+.automatesection{
+    width:100%;
+    height: 75%;
+    background-color: #f9c64f00;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+.footerheading{
+    font-size: 1.1rem;
+}
+.dlink{
+    color: rgb(128, 128, 128);
+    text-decoration: none;
+    padding: 5px;
+}
+.dlink:hover{
+    color:rgb(196, 196, 196);
+    background-color: #6f6f6f;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.socialmedia{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(167, 167, 167, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+}
+.fa{
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+}
+.fa:hover{
+  scale: 1.5;
+  background-color: #31313100;
+  transition: 0.3s;
+}
+.fa-facebook{
+  background-color: 	#4267B2;
+  color: white;
+}
+.fa-facebook:hover{
+  color: #4267B2;
+}
+.fa-instagram{
+  background-color: #C13584;
+  color: white;
+}
+.fa-instagram:hover{
+  color: #C13584;
+}
+.fa-linkedin{
+  background-color: #0077b5;
+  color: white;
+}
+.fa-linkedin:hover{
+  color: #0077b5;
+}
+.fa-google{
+  background-color: #DB4437;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-google:hover{
+  color: #DB4437;
+}
+.fa-github{
+    background-color: white;
+    color: black;
+}
+.fa-github:hover{
+    color: black;
+}
+.foundergmail{
+    width: 45px;
+    height: 45px;
+    scale: 1;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+/*footer responsiveness ends*/
+
+
+/*all the headers and all*/
+.logomountainpage{
+    transform: translateX(5%) translateY(5%);
+}
+.headerhoteltext{
+    transform: translateX(10%) translateY(-50%);
+}
+.goback:hover{
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.automatesection{
+    font-size: 1.2rem;
+}
+.indexspaceknow{
+    height: 100px;
+    width: 100%;
+}
+/*checkbox*/
+.plane-switch {
+    --dot: #fff;
+    --street: #6B6D76;
+    --street-line: #A8AAB4;
+    --street-line-mid: #C0C2C8;
+    --sky-1: #60A7FA;
+    --sky-2: #2F8EFC;
+    --light-1: rgba(255, 233, 0, 1);
+    --light-2: rgba(255, 233, 0, .3);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    transform: translateY(-70%);
+    font-weight: 700;
+    color: #5c5c5c;
+  }
+  
+  .plane-switch input {
+    display: none;
+  }
+  
+  .plane-switch input + div {
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    position: relative;
+    overflow: hidden;
+    width: 50px;
+    height: 25px;
+    padding: 1px;
+    border-radius: 13px;
+    background: linear-gradient(90deg, var(--street) 0%, var(--street) 25%, var(--sky-1) 75%, var(--sky-2) 100%) left var(--p, 0%) top 0;
+    background-position-x: var(--p, 0%);
+    background-size: 400% auto;
+    transition: background-position 0.6s;
+  }
+  
+  .plane-switch input + div:before, .plane-switch input + div:after {
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translateX(var(--s, 0));
+    transition: transform 0.3s;
+  }
+  
+  .plane-switch input + div:before {
+    width: 42px;
+    right: 2px;
+    top: 4px;
+    height: 1px;
+    background: var(--street-line);
+    box-shadow: 0 16px 0 0 var(--street-line);
+  }
+  
+  .plane-switch input + div:after {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    left: 23px;
+    top: 1px;
+    -webkit-animation: lights2 2s linear infinite;
+    animation: lights2 2s linear infinite;
+    box-shadow: inset 0 0 0 2px var(--light-1), 0 21px 0 var(--light-1), 8px 0 0 var(--light-2), 8px 21px 0 var(--light-2), 16px 0 0 var(--light-2), 16px 21px 0 var(--light-2);
+  }
+  
+  .plane-switch input + div span {
+    display: block;
+    position: absolute;
+  }
+  
+  .plane-switch input + div span.street-middle {
+    top: 12px;
+    left: 21px;
+    width: 3px;
+    height: 1px;
+    transform: translateX(var(--s, 0));
+    background: var(--street-line-mid);
+    box-shadow: 5px 0 0 var(--street-line-mid), 10px 0 0 var(--street-line-mid), 15px 0 0 var(--street-line-mid), 20px 0 0 var(--street-line-mid), 25px 0 0 var(--street-line-mid);
+    transition: transform 0.3s;
+  }
+  
+  .plane-switch input + div span.cloud {
+    width: 12px;
+    height: 4px;
+    border-radius: 2px;
+    background: #fff;
+    position: absolute;
+    top: var(--ct, 8px);
+    left: 100%;
+    opacity: var(--co, 0);
+    transition: opacity 0.3s;
+    -webkit-animation: clouds2 2s linear infinite var(--cd, 0s);
+    animation: clouds2 2s linear infinite var(--cd, 0s);
+  }
+  
+  .plane-switch input + div span.cloud:before, .plane-switch input + div span.cloud:after {
+    content: "";
+    position: absolute;
+    transform: translateX(var(--cx, 0));
+    border-radius: 50%;
+    width: var(--cs, 5px);
+    height: var(--cs, 5px);
+    background: #fff;
+    bottom: 1px;
+    left: 1px;
+  }
+  
+  .plane-switch input + div span.cloud:after {
+    --cs: 6px;
+    --cx: 4px;
+  }
+  
+  .plane-switch input + div span.cloud.two {
+    --ct: 20px;
+    --cd: 1s;
+    opacity: var(--co-2, 0);
+  }
+  
+  .plane-switch input + div div {
+    display: table;
+    position: relative;
+    z-index: 1;
+    padding: 5px;
+    border-radius: 50%;
+    background: var(--dot);
+    transform: translateX(var(--x, 0));
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.35, 1.2);
+  }
+  
+  .plane-switch input + div div svg {
+    width: 13px;
+    height: 13px;
+    display: block;
+    color: var(--c, var(--street));
+    transition: color 0.6s;
+  }
+  
+  .plane-switch input:checked + div {
+    --p: 100%;
+    --x: 55px;
+    --s: -50px;
+    --c: var(--sky-2);
+    --co: .8;
+    --co-2: .6;
+  }
+  .switch{
+    scale: 0.4;
+    position: relative;
+    top: -15px;
+    left: -12px;
+  }
+  
+  @keyframes lights2 {
+    20%, 30% {
+      box-shadow: inset 0 0 0 2px var(--light-2), 0 21px 0 var(--light-2), 8px 0 0 var(--light-1), 8px 21px 0 var(--light-1), 16px 0 0 var(--light-2), 16px 21px 0 var(--light-2);
+    }
+  
+    55%, 65% {
+      box-shadow: inset 0 0 0 2px var(--light-2), 0 21px 0 var(--light-2), 8px 0 0 var(--light-2), 8px 21px 0 var(--light-2), 16px 0 0 var(--light-1), 16px 21px 0 var(--light-1);
+    }
+  
+    90%, 100% {
+      box-shadow: inset 0 0 0 2px var(--light-1), 0 21px 0 var(--light-1), 8px 0 0 var(--light-2), 8px 21px 0 var(--light-2), 16px 0 0 var(--light-2), 16px 21px 0 var(--light-2);
+    }
+  }
+  
+  @keyframes clouds2 {
+    97% {
+      transform: translateX(-72px);
+      visibility: visible;
+    }
+  
+    98%, 100% {
+      visibility: hidden;
+    }
+  
+    99% {
+      transform: translateX(-72px);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
