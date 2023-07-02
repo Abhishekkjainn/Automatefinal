@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Your Booking | Automate</title>
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="MainlogoAutomate.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="MainlogoAutomate.png">
+    <meta name="description" content="Ensure a smooth and reliable autorickshaw ride experience with our comprehensive ride confirmation page. Review and verify all the details of your booked autorickshaw ride, including pickup location, drop-off destination, fare, and estimated arrival time. With our user-friendly platform, enjoy peace of mind knowing that your ride details are confirmed and ready for a hassle-free journey in Vellore.">
+</head>
+<body>
+    <div class="logoimagecnfbookingpage">
+        <img src="logoautomate2.png" alt="mainlogo" width="150px" style="margin-left: 30%;">
+    </div>
+    <!--loader-->
+    <div class="preloader" id="preloader">
+        <svg class="pl" viewBox="0 0 160 160" width="160px" height="160px" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+					<stop offset="0%" stop-color="#000"></stop>
+					<stop offset="100%" stop-color="#fff"></stop>
+				</linearGradient>
+				<mask id="mask1">
+					<rect x="0" y="0" width="160" height="160" fill="url(#grad)"></rect>
+				</mask>
+				<mask id="mask2">
+					<rect x="28" y="28" width="104" height="104" fill="url(#grad)"></rect>
+				</mask>
+			</defs>
+			
+			<g>
+				<g class="pl__ring-rotate">
+					<circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(223,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
+				</g>
+			</g>
+			<g mask="url(#mask1)">
+				<g class="pl__ring-rotate">
+					<circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(193,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
+				</g>
+			</g>
+			
+			<g>
+				<g stroke-width="4" stroke-dasharray="12 12" stroke-dashoffset="12" stroke-linecap="round" transform="translate(80,80)">
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-135,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-90,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-45,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(0,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(45,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(90,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(135,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(180,0,0) translate(0,40)"></polyline>
+				</g>
+			</g>
+			<g mask="url(#mask1)">
+				<g stroke-width="4" stroke-dasharray="12 12" stroke-dashoffset="12" stroke-linecap="round" transform="translate(80,80)">
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-135,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-90,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-45,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(0,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(45,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(90,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(135,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(180,0,0) translate(0,40)"></polyline>
+				</g>
+			</g>
+			
+			<g>
+				<g transform="translate(64,28)">
+					<g class="pl__arrows" transform="rotate(45,16,52)">
+						<path fill="hsl(3,90%,55%)" d="M17.998,1.506l13.892,43.594c.455,1.426-.56,2.899-1.998,2.899H2.108c-1.437,0-2.452-1.473-1.998-2.899L14.002,1.506c.64-2.008,3.356-2.008,3.996,0Z"></path>
+						<path fill="hsl(223,10%,90%)" d="M14.009,102.499L.109,58.889c-.453-1.421,.559-2.889,1.991-2.889H29.899c1.433,0,2.444,1.468,1.991,2.889l-13.899,43.61c-.638,2.001-3.345,2.001-3.983,0Z"></path>
+					</g>
+				</g>
+			</g>
+			<g mask="url(#mask2)">
+				<g transform="translate(64,28)">
+					<g class="pl__arrows" transform="rotate(45,16,52)">
+						<path fill="hsl(333,90%,55%)" d="M17.998,1.506l13.892,43.594c.455,1.426-.56,2.899-1.998,2.899H2.108c-1.437,0-2.452-1.473-1.998-2.899L14.002,1.506c.64-2.008,3.356-2.008,3.996,0Z"></path>
+						<path fill="hsl(223,90%,80%)" d="M14.009,102.499L.109,58.889c-.453-1.421,.559-2.889,1.991-2.889H29.899c1.433,0,2.444,1.468,1.991,2.889l-13.899,43.61c-.638,2.001-3.345,2.001-3.983,0Z"></path>
+					</g>
+				</g>
+			</g>
+		</svg>
+    </div>
+    <!--loader over-->
+    <div class="maincontentconfirmbookingpage">
+        <h1 class="cnfbookingpagehead">Meet Your Driver</h1>
+        <div class="driverimagecnfpage" id="driverimagecnfpage">
+            <img src="driver1.jpg"  class="driverimgimgcfnpage" id="driverimageimgcfnpage" alt="driverimg">
+        </div>
+        <div class="drivernamecnfpage" id="drivernamecnfpage">Abhishek Jain</div>
+        <div class="idnocnfpage" id="idnocfnpage">Id - 190204</div>
+        <div class="pickupaddresscnfpage">
+            <div class="pickupimgcnfpg">
+                <p class="pickupimgtextcnfpage">Pickup</p>
+                <img src="pickup.png" alt="pickuplogo" width="30px" class="pickimgimgcnfpg">
+            </div>
+            <div class="pickupnamecnfg" id="pickupnamecnfpg">
+                -
+            </div>
+        </div>
+        <div class="dropaddresscnfpage">
+            <div class="dropimgcnfpg">
+                <p class="pickupimgtextcnfpage">Drop</p>
+                <img src="drop.png" alt="droplogo" width="30px" class="pickimgimgcnfpg">
+            </div>
+            <div class="dropnamecnfpg" id="dropnamecnfpg">
+                -
+            </div>
+        </div>
+        <div class="additionalinfocnfpage">
+            <div class="autonolangcnfpage">
+                <div class="autonodivcnfpage">
+                    <p class="autoheadcnfpage">Auto No</p>
+                    <hr class="sepcnfpage">
+                    <p class="autonocnfpage" id="autonocnfpage">---- -- ----</p>
+                </div>
+                <hr class="sepcnfpage">
+                <div class="languagediv">
+                    <p class="languageheadcnfpage">Languages</p>
+                    <p class="languagetextcnfpage" id="languagetextcnfpage">-</p>
+                </div>
+            </div>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                  <div class="title">Fare Benefits and Conditions</div>
+                  <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <ul class="fareconditions">
+                    <li class="point1">The maximum occupancy limit for a single auto-rickshaw is two individuals. In the event that the number of passengers exceeds two, an additional charge of INR 50 per person shall be levied.</li>
+                    <br>
+                    <li class="point2">
+                        An additional fee of INR 50 will be applied to the fare for passengers who require pick-up services from the hostel gate.
+                    </li>
+                    <br>
+                    <li class="point3">
+                        The maximum permissible capacity for a single auto-rickshaw is limited to five individuals. Exceeding this prescribed limit is not allowed.
+                    </li>
+                    <br>
+                    <li class="point4">
+                        Please note that parking charges, if applicable, are not included in the fare and will be charged separately.
+                    </li>
+                    <!-- <li class="point5"></li>
+                    <li class="point6"></li> -->
+                  </ul>
+                </div>
+              </div>
+                <div id="overlay"></div>
+            <div class="farecnfpage">
+                <div class="fareheadcfnpage"> Fare</div>
+                <div class="farepricecfnpage" id="farepricecfnpage">-</div>
+                <button class="infobuttoncnfpage" data-modal-target="#modal">
+                    <img src="info.png" alt="infologo" width="25px">
+                    
+                </button>
+            </div>
+            <div class="datetimecnfpage">
+                <div class="datedivcnfpage">
+                    <p class="dateheadcnfpage">Date</p>
+                    <hr class="sepcnfpage">
+                    <p class="datecnfpage" id="datecfnpage">01/03/23</p>
+                </div>
+                <hr class="sepcnfpage">
+                <div class="timediv">
+                    <p class="timeheadcnfpage">Time</p>
+                    <p class="timetextcnfpage" id="timetextcnfpage">22:52</p>
+                </div>
+            </div>
+            <div class="buttonscnfpage">
+            <a class="callnowbuttoncnfpage external" href="#" id="callnowbuttoncnfpage" onclick="">Call Now</a>
+                
+            <button class="ridecompcnfpage" onclick="ridecompletedbuttontopage()">Ride Completed</button>
+        
+            </div>
+        </div>
+        <div class="adscnfpage" ></div>
+    </div>
+
+    
+
+
+    <script src="script.js"></script>
+
+    
+
+
+    <script>
+
+
+
+
+
+
+
+
+
+
+        let dname = localStorage.getItem("name1");
+        document.getElementById("drivernamecnfpage").innerHTML = localStorage.getItem("name1");//updating the name of driver
+        document.getElementById("idnocfnpage").innerHTML = "ID - "+localStorage.getItem("id");//updating the id of the driver
+        //updating other details such as auto no languages driver image of the drivers
+        if (dname === "Anand S"){
+            document.getElementById("driverimageimgcfnpage").src="AnandS.jpg";
+            document.getElementById("autonocnfpage").innerText = "TN23 BF 8709";
+            document.getElementById("languagetextcnfpage").innerText = "Hindi Kannada Tamil Telugu English"
+            document.getElementById("callnowbuttoncnfpage").href="tel:+91 7338133731";
+            document.getElementById("callnowbuttoncnfpage").onclick="window.open('tel:+91 7338133731')";
+            let src = "anandsQR.jpg";
+            localStorage.setItem("qrcode",src); 
+            
+        }
+        if (dname === "V. Vijay Kumar"){
+            document.getElementById("driverimageimgcfnpage").src="Vvinoth.jpeg";
+            document.getElementById("autonocnfpage").innerText = "TN23 BH 4419";
+            document.getElementById("languagetextcnfpage").innerText = "Tamil Hindi Kannada English"
+            document.getElementById("callnowbuttoncnfpage").href="tel:+91 9087408449";
+            let src = "VvinothQR.jpg";
+            localStorage.setItem("qrcode",src);
+            document.getElementById("callnowbuttoncnfpage").onclick="window.open('tel:+91 9087408449')"
+        }
+        if (dname === "Anand D"){
+            document.getElementById("driverimageimgcfnpage").src="AnandD.jpeg";
+            document.getElementById("autonocnfpage").innerText = "TN23 AK 2412";
+            document.getElementById("languagetextcnfpage").innerText = "Tamil Telugu Hindi";
+            document.getElementById("callnowbuttoncnfpage").href="tel:+91 9940658810";
+            let src = "harshit.png";
+            localStorage.setItem("qrcode",src);
+            document.getElementById("callnowbuttoncnfpage").onclick="window.open('tel:+91 9940658810')"
+        }
+        if (dname === "Vinoth R"){
+            document.getElementById("driverimageimgcfnpage").src="VinothR.jpeg";
+            document.getElementById("autonocnfpage").innerText = "TN23 CC 4998";
+            document.getElementById("languagetextcnfpage").innerText = "Tamil Hindi English";
+            document.getElementById("callnowbuttoncnfpage").href="tel:+91 9487681161";
+            let src = "ronak.png";
+            localStorage.setItem("qrcode",src);
+            document.getElementById("callnowbuttoncnfpage").onclick="window.open('tel:+91 9487681161')"
+        }
+        if (dname === "G. Baskar"){
+            document.getElementById("driverimageimgcfnpage").src="AnandS.jpg";
+            document.getElementById("autonocnfpage").innerText = "TN23 CB 0823";
+            document.getElementById("languagetextcnfpage").innerText = "Tamil Hindi Kannada English"
+            document.getElementById("callnowbuttoncnfpage").href="tel:+91 9994383844";
+            let src = "rounak4.png";
+            localStorage.setItem("qrcode",src);
+            document.getElementById("callnowbuttoncnfpage").onclick="window.open('tel:+91 999438344')";
+        }
+        //updating the fare price 
+        document.getElementById("farepricecfnpage").innerText = localStorage.getItem("fare");
+        //setting the date time
+        var currentdate = new Date(); 
+        var date = currentdate.getDate() + "/"+ (currentdate.getMonth()+1)  + "/" + currentdate.getFullYear()
+        var time = currentdate.getHours() + ":" + currentdate.getMinutes();
+        //updating the date time
+        document.getElementById("datecfnpage").innerText = date;
+        document.getElementById("timetextcnfpage").innerText = time;
+        //updating pickup drop
+
+        let pickupaddress = localStorage.getItem("pickupaddress");
+        document.getElementById("pickupnamecnfpg").innerHTML  = pickupaddress;
+        let dropaddress = localStorage.getItem("dropaddress");
+        document.getElementById("dropnamecnfpg").innerHTML = dropaddress;
+
+
+        
+    </script>
+</body>
+</html>

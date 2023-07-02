@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet The Team</title>
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="MainlogoAutomate.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .headerfounders{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+        }
+        .imageabhi{
+            width: 10%;
+            position: relative;
+            z-index: 10;
+            transform: translateY(7%)  translateX(-80%);
+        }
+        .imgvarun{
+            scale: 0.7;
+            transform: translateY(7%) translateX(-350%);
+        }
+        .headerhead{
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        .abhishekdiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(20%);
+        }
+        .varundiv{
+            transform: translateY(20%);
+        }
+        .descabhi{
+            width: 70%;
+            height: 400px;
+            background-color: #3A81F1;
+            border: none;
+            border-radius: 25px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .descvarun{
+            width: 70%;
+            height: 400px;
+            background-color: #E44335;
+            border: none;
+            border-radius: 25px;
+            display: flex;
+            justify-content:start;
+            align-items: center;
+        
+        }
+        .namefounder{
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            width: 100%;
+        }
+        .namefoundervarun{
+            width: 110%;
+        }
+        .position{
+            font-size: 14px;
+            font-weight: 100;
+            color: white;
+        }
+        .desctext{
+            font-size: 10px;
+            letter-spacing: 1px;
+            color: white;
+        }
+        .contentdescfounder{
+            width: 65%;
+            margin-right: 10px;
+        }
+        .contentdescfoundervarun{
+            margin-left: 10px;
+            margin-right: 0;
+        }
+        .foundergit,.founderinsta,.founderlinkedin,.foundergmail{
+            width: 40px;
+            height: 40px;
+        }
+        .fa{
+            padding: 0px;
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            border: none;
+            border-radius: 10px;
+        }
+        .fa:hover{
+            scale: 1.5;
+            background-color: #31313100;
+            transition: 0.3s;
+        }
+        .socialmediafounders{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            transform: translateY(50%);
+        } 
+        .fa-github:hover{
+            color: rgb(255, 255, 255);
+        }
+        .foundertwitter{
+            background-color: #3A81F1;
+            color: white;
+        }
+        .foundertwitter:hover{
+            color: #3A81F1;
+
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+        .foundergmail{
+            display: flex;
+        }
+        .foundergmail:hover{
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="headerfounders">
+        <div class="headerhead">MEET THE TEAM</div>
+        <div class="logoheader">
+            <img src="logoautomate2.png" alt="AutomateLOGO" width="150px">
+        </div>
+    </header>
+    <!--abhishek-->
+    <div class="abhishekdiv ">
+        <div class="imageabhi">
+            <img src="abhi-removebg-preview2.png" alt="Abhishek jain" width="221px">
+        </div>
+        <div class="descabhi">
+            <div class="contentdescfounder">
+            <h1 class="namefounder">Abhishek Jain</h1>
+            <h3 class="position">Website Developer</h3>
+            <div class="desctext">Meet Abhishek, a highly creative front-end developer with exceptional problem-solving skills. With a passion for innovative design, Abhishek creates visually stunning user interfaces. Their analytical mindset and resourcefulness enable them to overcome complex challenges. Committed to continuous growth, Abhishek stays up-to-date with industry trends. A collaborative team player, they excel in communication. Abhishek consistently delivers high-quality results, bringing creativity to every project.</div>
+            <div class="socialmediafounders">
+                <button class="fa fa-github foundergit" onclick="abhishekgithub()"></button>
+                <button class="fa fa-instagram founderinsta" onclick="abhishekinsta()"></button>
+                <button class="fa fa-linkedin founderlinkedin" onclick="abhisheklinkedin()"></button>
+                <a class="fa fa-google foundergmail" id="gmailbuttonabhi" href="mailto:jainabhishek1904@gmail.com" ></a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--varun-->
+    <div class="abhishekdiv varundiv">
+       
+        <div class="descabhi descvarun">
+            <div class="contentdescfounder contentdescfoundervarun">
+            <h1 class="namefounder namefoundervarun">Varun Shirsath</h1>
+            <h3 class="position">Manager - Automate</h3>
+            <div class="desctext desctextvarun">Meet Varun, a creative and solution-oriented manager and content writer. With a talent for crafting engaging content, Varun brings a fresh perspective to every project. Their creative problem-solving skills enable them to find innovative solutions. A skilled manager, Varun excels in coordinating teams and driving successful outcomes. With effective communication and collaboration, Varun delivers captivating content that achieves outstanding results.</div>
+            <div class="socialmediafounders">
+                <button class="fa fa-twitter foundertwitter" onclick="varuntwitter()"></button>
+                <button class="fa fa-instagram founderinsta" onclick="varuninsta()"></button>
+                <button class="fa fa-linkedin founderlinkedin" onclick="varunlinkedin()"></button>
+                <a class="fa fa-google foundergmail" href="mailto:varunshirsath2003@gmail.com"></a>
+            </div>
+        </div>
+        </div>
+        <div class="imageabhi imgvarun">
+            <img src="varundev-removebg-preview.png" alt="Abhishek jain" width="221px">
+        </div>
+    </div>
+
+    <script>
+        function abhishekgithub(){
+            location.assign("https://github.com/Abhishekkjainn");
+        }
+        function abhishekinsta(){
+            location.assign("https://www.instagram.com/abhishekk.jainnn/");
+        }
+        function abhisheklinkedin(){
+            location.assign("https://www.linkedin.com/in/abhishekk-jainn");
+        }
+        function varuntwitter(){
+            location.assign("https://github.com/Abhishekkjainn");
+        }
+        function varuninsta(){
+            location.assign("https://www.instagram.com/varun_.shirsath/");
+        }
+        function varunlinkedin(){
+            location.assign("https://www.instagram.com/varun_.shirsath/");
+        }
+        
+    </script>
+</body>
+</html>

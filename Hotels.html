@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels in Vellore | Automate</title>
+	<meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="MainlogoAutomate.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="MainlogoAutomate.png">
+    <meta name="description" content=
+	"Discover and book hotels in Vellore effortlessly with our convenient categorization and booking page. Explore a wide selection of hotels curated to suit your preferences and budget. Simplify your hotel booking process by accessing detailed information, including amenities, reviews, and prices. Find the perfect accommodation in Vellore and make your stay memorable with our user-friendly platform.">
+</head>
+<body>
+    <!--loader-->
+    <div class="preloader" id="preloader">
+        <svg class="pl" viewBox="0 0 160 160" width="160px" height="160px" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+					<stop offset="0%" stop-color="#000"></stop>
+					<stop offset="100%" stop-color="#fff"></stop>
+				</linearGradient>
+				<mask id="mask1">
+					<rect x="0" y="0" width="160" height="160" fill="url(#grad)"></rect>
+				</mask>
+				<mask id="mask2">
+					<rect x="28" y="28" width="104" height="104" fill="url(#grad)"></rect>
+				</mask>
+			</defs>
+			
+			<g>
+				<g class="pl__ring-rotate">
+					<circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(223,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
+				</g>
+			</g>
+			<g mask="url(#mask1)">
+				<g class="pl__ring-rotate">
+					<circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(193,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
+				</g>
+			</g>
+			
+			<g>
+				<g stroke-width="4" stroke-dasharray="12 12" stroke-dashoffset="12" stroke-linecap="round" transform="translate(80,80)">
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-135,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-90,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-45,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(0,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(45,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(90,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(135,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(180,0,0) translate(0,40)"></polyline>
+				</g>
+			</g>
+			<g mask="url(#mask1)">
+				<g stroke-width="4" stroke-dasharray="12 12" stroke-dashoffset="12" stroke-linecap="round" transform="translate(80,80)">
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-135,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-90,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-45,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(0,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(45,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(90,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(135,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(180,0,0) translate(0,40)"></polyline>
+				</g>
+			</g>
+			
+			<g>
+				<g transform="translate(64,28)">
+					<g class="pl__arrows" transform="rotate(45,16,52)">
+						<path fill="hsl(3,90%,55%)" d="M17.998,1.506l13.892,43.594c.455,1.426-.56,2.899-1.998,2.899H2.108c-1.437,0-2.452-1.473-1.998-2.899L14.002,1.506c.64-2.008,3.356-2.008,3.996,0Z"></path>
+						<path fill="hsl(223,10%,90%)" d="M14.009,102.499L.109,58.889c-.453-1.421,.559-2.889,1.991-2.889H29.899c1.433,0,2.444,1.468,1.991,2.889l-13.899,43.61c-.638,2.001-3.345,2.001-3.983,0Z"></path>
+					</g>
+				</g>
+			</g>
+			<g mask="url(#mask2)">
+				<g transform="translate(64,28)">
+					<g class="pl__arrows" transform="rotate(45,16,52)">
+						<path fill="hsl(333,90%,55%)" d="M17.998,1.506l13.892,43.594c.455,1.426-.56,2.899-1.998,2.899H2.108c-1.437,0-2.452-1.473-1.998-2.899L14.002,1.506c.64-2.008,3.356-2.008,3.996,0Z"></path>
+						<path fill="hsl(223,90%,80%)" d="M14.009,102.499L.109,58.889c-.453-1.421,.559-2.889,1.991-2.889H29.899c1.433,0,2.444,1.468,1.991,2.889l-13.899,43.61c-.638,2.001-3.345,2.001-3.983,0Z"></path>
+					</g>
+				</g>
+			</g>
+		</svg>
+    </div>
+    <!--loader over-->
+    <div class="headerhotelpage">
+        <img src="MainlogoAutomate-removebg-preview.png" alt="" class="logomountainpage" width="100px">
+        <h1 class="headerhoteltext">
+            <em>
+            <span class="greentext">Hotels</span> in Vellore </em>
+        </h1>
+    </div>
+    <div class="hoteldiv">
+		
+        <div class="hotel1 hotelone">
+            <button class="placename hotelname">Fortune Park</button>
+        </div>
+        <div class="hotel1 hoteltwo">
+
+            <button class="placename hotelname">Rangalaya</button>
+        </div>
+        <div class="hotel1 hotelthree">
+            <button class="placename hotelname">Benz park</button>
+        </div>
+        <div class="hotel1 hotelfour">
+            <button class="placename hotelname">Darling Residency</button>
+        </div>
+        <div class="hotel1 hotelfive">
+            <button class="placename hotelname">Khanna Fiesta</button>
+        </div>
+        <div class="hotel1 hotelsix">
+            <button class="placename hotelname">SMS Grand Inn</button>
+        </div>
+        <div class="hotel1 hotelseven">
+            <button class="placename hotelname">Aloka Stay Inn</button>
+        </div>
+        <div class="hotel1 hoteleight">
+            <button class="placename hotelname">Mount Paradise</button>
+        </div>
+		<div class="hotel1 hotelnine">
+            <button class="placename hotelname">Grand Krishna</button>
+        </div>
+		<div class="hotel1 hotelten">
+            <button class="placename hotelname">GRT Residency</button>
+        </div>
+		<div class="hotel1 hoteleleven">
+            <button class="placename hotelname">Anna Malai Hotel</button>
+        </div>
+		<div class="hotel1 hoteltwelve">
+            <button class="placename hotelname">Srinivasa Hotel</button>
+        </div>
+		<div class="hotel1 hotelthirteen">
+            <button class="placename hotelname">Pulusu</button>
+        </div>
+		<div class="hotel1 hotelfourteen">
+            <button class="placename hotelname">Royal Grand</button>
+        </div>
+        <button class="goback" onclick="redirecttohotelbookingpag()">Book Auto</button>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

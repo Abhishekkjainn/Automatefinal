@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking page | Automate</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" href="MainlogoAutomate.png">
+    <link rel="apple-touch-icon" href="MainlogoAutomate.png">
+    <meta name="description" content=
+    "Easily book rides to hotels in Vellore with our efficient categorization and booking page. Discover a convenient way to arrange transportation to your desired hotel in Vellore. Streamline your travel plans by accessing a variety of reliable ride options, including autorickshaws and taxis. Enjoy a hassle-free journey and reach your hotel comfortably with our user-friendly platform.">
+</head>
+<body>
+    <div class="headertagbookpage">
+        <img src="logoautomate2sized.png" alt="mainlogo" class="headerimgbookpage" width="180px">
+    </div>
+    <!--loader-->
+    <div class="preloader" id="preloader">
+        <svg class="pl" viewBox="0 0 160 160" width="160px" height="160px" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+					<stop offset="0%" stop-color="#000"></stop>
+					<stop offset="100%" stop-color="#fff"></stop>
+				</linearGradient>
+				<mask id="mask1">
+					<rect x="0" y="0" width="160" height="160" fill="url(#grad)"></rect>
+				</mask>
+				<mask id="mask2">
+					<rect x="28" y="28" width="104" height="104" fill="url(#grad)"></rect>
+				</mask>
+			</defs>
+			
+			<g>
+				<g class="pl__ring-rotate">
+					<circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(223,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
+				</g>
+			</g>
+			<g mask="url(#mask1)">
+				<g class="pl__ring-rotate">
+					<circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(193,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
+				</g>
+			</g>
+			
+			<g>
+				<g stroke-width="4" stroke-dasharray="12 12" stroke-dashoffset="12" stroke-linecap="round" transform="translate(80,80)">
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-135,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-90,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-45,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(0,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(45,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(90,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(135,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(180,0,0) translate(0,40)"></polyline>
+				</g>
+			</g>
+			<g mask="url(#mask1)">
+				<g stroke-width="4" stroke-dasharray="12 12" stroke-dashoffset="12" stroke-linecap="round" transform="translate(80,80)">
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-135,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-90,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-45,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(0,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(45,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(90,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(135,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(180,0,0) translate(0,40)"></polyline>
+				</g>
+			</g>
+			
+			<g>
+				<g transform="translate(64,28)">
+					<g class="pl__arrows" transform="rotate(45,16,52)">
+						<path fill="hsl(3,90%,55%)" d="M17.998,1.506l13.892,43.594c.455,1.426-.56,2.899-1.998,2.899H2.108c-1.437,0-2.452-1.473-1.998-2.899L14.002,1.506c.64-2.008,3.356-2.008,3.996,0Z"></path>
+						<path fill="hsl(223,10%,90%)" d="M14.009,102.499L.109,58.889c-.453-1.421,.559-2.889,1.991-2.889H29.899c1.433,0,2.444,1.468,1.991,2.889l-13.899,43.61c-.638,2.001-3.345,2.001-3.983,0Z"></path>
+					</g>
+				</g>
+			</g>
+			<g mask="url(#mask2)">
+				<g transform="translate(64,28)">
+					<g class="pl__arrows" transform="rotate(45,16,52)">
+						<path fill="hsl(333,90%,55%)" d="M17.998,1.506l13.892,43.594c.455,1.426-.56,2.899-1.998,2.899H2.108c-1.437,0-2.452-1.473-1.998-2.899L14.002,1.506c.64-2.008,3.356-2.008,3.996,0Z"></path>
+						<path fill="hsl(223,90%,80%)" d="M14.009,102.499L.109,58.889c-.453-1.421,.559-2.889,1.991-2.889H29.899c1.433,0,2.444,1.468,1.991,2.889l-13.899,43.61c-.638,2.001-3.345,2.001-3.983,0Z"></path>
+					</g>
+				</g>
+			</g>
+		</svg>
+    </div>
+    <!--loader over-->
+    <!--Book form div-->
+    <div class="bookcontainer">
+    <div class="bookform">
+        <h1 class="bookformheading">Book Your Ride</h1>
+        <div class="pickdropdiv">
+            <div class="pickuplocation">
+                <img src="pickup.png" alt="" class="pickimg" width="44px" height="44px">
+                <div class="picklocationinput">
+                    <p class="picktext">From</p>
+                    <select class="inputlocation" id="pickuplocation">
+                        <option value="#"></option>
+                        <option value="VIT Main Gate">VIT Main Gate </option>
+                        <option value="Rangalaya">Rangalaya</option>
+                        <option value="Fortune Parks">Fortune Parks</option>
+                        <option value="Jyothi Hotel">Jyothi Hotel</option>
+                        <option value="Benz Park">Benz Park</option>
+                        <option value="Khanna Fiesta">Khanna Fiesta</option>
+                        <option value="Darling Residency">Darling Residency</option>
+                        <option value="GRT Residency">GRT Residency</option>
+                        <option value="Annamalai Hotel">Annamalai Hotel</option>
+                        <option value="Srinivasa Hotel">Srinivasa Hotel</option>
+                        <option value="Pulusu">Pulusu</option>
+                        <option value="Royal Grand">Royal Grand</option>
+                        <option value="SMS Grand Inn">SMS Grand Inn</option>
+                        <option value="Hotel Alka">Hotel Alka</option>
+                        <option value="Mount Paradise">Mount Paradise</option>
+                        <option value="Grand Krishna Hotel">Grand Krishna Hotel</option>
+                        <option value="Hotel Essence">Hotel Essence</option>
+                        <option value="M Square">M Square</option>
+                        <option value="Grand Ganpat">Grand Ganpat</option>
+                        <option value="Arihant Inn">Arihant Inn</option>
+                        <option value="Millenium Residency">Millenium Residency</option>
+                        <option value="SGRT Residency">SGRT Residency</option>
+                        <option value="Kingsbury Fiesta">Kingsbury Fiesta</option>
+                        <option value="Prince Park">Prince Park</option>
+                        <option value="Vijayshree Inn">Vijayshree Inn</option>
+                        <option value="FAB Hotel Pranav Park">FAB Hotel Pranav Park</option>
+                        <option value="Surabhi International">Surabhi International</option>
+                        <option value="JRS Residency">JRS Residency</option>
+                        <option value="Pawan Parks">Pawan Park</option>
+                        <option value="River View Hotel">River View Hotel</option>
+                        <option value="Palm Tree Hotel">Palm Tree Hotel</option>
+                        <option value="Golden Gateway">Golden Gateway</option>
+                        <option value="Sri Balaji International">Sri Balaji International</option>
+                        <option value="Yaa Residency">Yaa Residency</option>
+                        <option value="Senthur Inn">Senthur Inn</option>
+                        <option value="Golden Fort">Golden Fort</option>
+                        <option value="BKS Residency">BKS Residency</option>
+                        <option value="Sri Murugan">Sri Murugan</option>
+                        <option value="Grand Chariot Hotel">Grand Chariot Hotel</option>
+                        <option value="Green Park">Green Park</option>
+                        <option value="Vaibhav Residency">Vaibhav Residency</option>
+                        <option value="Baby Residency">Baby Residency</option>
+                        <option value="Babu Naidu Residency">Babu Naidu Residency</option>
+                        <option value="Banu Residency">Banu Residency</option>
+                        <option value="Chella Krishna Residency">Chella Krishna Residency</option>
+                        <option value="SR Residency">SR Residency</option>
+                    </select>  
+                </div>
+            </div>
+            <hr class="sep">
+            <div class="droplocation">
+                <img src="drop.png" alt="" class="dropimg" width="44px" height="44px">
+                <div class="droplocationinput">
+                    <p class="droptext">To</p>
+                    <select class="inputlocation" id="droplocationbookingpage"> 
+                        <option value="#"></option>
+                        <option value="VIT Main Gate">VIT Main Gate </option>
+                        <option value="Rangalaya">Rangalaya</option>
+                        <option value="Fortune Parks">Fortune Parks</option>
+                        <option value="Jyothi Hotel">Jyothi Hotel</option>
+                        <option value="Benz Park">Benz Park</option>
+                        <option value="Khanna Fiesta">Khanna Fiesta</option>
+                        <option value="Darling Residency">Darling Residency</option>
+                        <option value="GRT Residency">GRT Residency</option>
+                        <option value="Annamalai Hotel">Annamalai Hotel</option>
+                        <option value="Srinivasa Hotel">Srinivasa Hotel</option>
+                        <option value="Pulusu">Pulusu</option>
+                        <option value="Royal Grand">Royal Grand</option>
+                        <option value="SMS Grand Inn">SMS Grand Inn</option>
+                        <option value="Hotel Alka">Hotel Alka</option>
+                        <option value="Mount Paradise">Mount Paradise</option>
+                        <option value="Grand Krishna Hotel">Grand Krishna Hotel</option>
+                        <option value="Hotel Essence">Hotel Essence</option>
+                        <option value="M Square">M Square</option>
+                        <option value="Grand Ganpat">Grand Ganpat</option>
+                        <option value="Arihant Inn">Arihant Inn</option>
+                        <option value="Millenium Residency">Millenium Residency</option>
+                        <option value="SGRT Residency">SGRT Residency</option>
+                        <option value="Kingsbury Fiesta">Kingsbury Fiesta</option>
+                        <option value="Prince Park">Prince Park</option>
+                        <option value="Vijayshree Inn">Vijayshree Inn</option>
+                        <option value="FAB Hotel Pranav Park">FAB Hotel Pranav Park</option>
+                        <option value="Surabhi International">Surabhi International</option>
+                        <option value="JRS Residency">JRS Residency</option>
+                        <option value="Pawan Parks">Pawan Park</option>
+                        <option value="River View Hotel">River View Hotel</option>
+                        <option value="Palm Tree Hotel">Palm Tree Hotel</option>
+                        <option value="Golden Gateway">Golden Gateway</option>
+                        <option value="Sri Balaji International">Sri Balaji International</option>
+                        <option value="Yaa Residency">Yaa Residency</option>
+                        <option value="Senthur Inn">Senthur Inn</option>
+                        <option value="Golden Fort">Golden Fort</option>
+                        <option value="BKS Residency">BKS Residency</option>
+                        <option value="Sri Murugan">Sri Murugan</option>
+                        <option value="Grand Chariot Hotel">Grand Chariot Hotel</option>
+                        <option value="Green Park">Green Park</option>
+                        <option value="Vaibhav Residency">Vaibhav Residency</option>
+                        <option value="Baby Residency">Baby Residency</option>
+                        <option value="Babu Naidu Residency">Babu Naidu Residency</option>
+                        <option value="Banu Residency">Banu Residency</option>
+                        <option value="Chella Krishna Residency">Chella Krishna Residency</option>
+                        <option value="SR Residency">SR Residency</option>
+                    </select> 
+                </div>
+            </div>
+        </div>
+        <label class="plane-switch" style="display: none;">
+            Pickup From Hostel 
+            <input type="checkbox" class="checkhostel" id="checkhostel" name="checkchostel">
+            <div>
+                <div class="switch">
+                    <img src="toggleicon.png" alt="Autorickshaw" width="100%" >
+                </div>
+                <span class="street-middle"></span>
+                <span class="cloud"></span>
+                <span class="cloud two"></span>
+            </div>
+        </label>
+        <div class="peoplecounter">
+            <div class="headingcounter">Enter the Number of People</div>
+            <select name="people" id="people" class="wrapper">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            
+        </div>
+        <button class="findridebuttonbookpage" onclick="hidefaredivbookingpage(),hidedriversdivbookingpage(),extractpickupaddress(),extractdropaddress(),gettime(),getnoofpeople(),fareupdate()" id="findridebuttonbookpage">Find Rides</button>
+    
+        </div>
+    </div>
+    <!--Book form div endss-->
+    <!--Fare tag-->
+    <div class="farediv" id="faredivbookingpage">
+        <p class="text">Fare - </p>
+        <p class="fare" id="fare">150 Rs/-</p>
+    </div>
+    <!--Fare tag ends-->
+    <!--Drivers div-->
+    <div class="Availableridesdiv" id="availabledriversbookingpage">
+        <div class="driver1 driverone">
+            <div class="driverimgbookingpage" >
+                <img src="AnandS.jpg" alt="driverimg" width="75px" height="75px" class="driverimg" id="driverimg1">
+            </div>
+            <div class="information">
+                <div class="drivernamebookpage">
+                <p class="name" id="name1">Anand S</p>
+                <p class="id1" id="id1" style="display: none;">081083</p>
+                <img src="anandsQR.jpg" alt="driverimg" width="90%" id="qrcode1" style="display: none;">
+                <p class="phonenumber" id="drv1phnno" style="display: none;">7338133731</p>
+                <img src="verified.png" alt="driverimg" width="28px" height="28px">
+                </div>
+                <button class="confirmbooking" onclick="cnfbuttontocnfpage(),getdriversname1(),updatingpickupincnfpage()">Confirm Booking</button>
+            </div>
+        </div>
+        <div class="driver1 drivertwo">
+            <div class="driverimgbookingpage">
+                <img src="Vvinoth.jpeg" alt="driverimg" width="75px" height="75px" class="driverimg" id="driverimg2">
+            </div>
+            <div class="information">
+                <div class="drivernamebookpage">
+                <p class="name" id="name2">V. Vijay Kumar</p>
+                <p class="id1" id="id2" style="display: none;">270494</p>
+                <img src="VvinothQR.jpg" alt="driverimg" width="90%" id="qrcode2" style="display: none;">
+                <p class="phonenumber" id="drv2phnno" style="display: none;">9087408449</p>
+                <img src="verified.png" alt="driverimg" width="28px" height="28px">
+                </div>
+                <button class="confirmbooking" onclick="cnfbuttontocnfpage(),getdriversname2(),updatingpickupincnfpage(),preventBack()">Confirm Booking</button>
+            </div>
+        </div>
+        <div class="driver1 driverthree">
+            <div class="driverimgbookingpage">
+                <img src="AnandD.jpeg" alt="driverimg" width="75px" height="75px" class="driverimg" id="driverimg3">
+            </div>
+            <div class="information">
+                <div class="drivernamebookpage">
+                <p class="name" id="name3">Anand D</p>
+                <p class="id1" id="id3" style="display: none;">070987</p>
+                <img src="harshit.png" alt="driverimg" width="90%" id="qrcode3" style="display: none;">
+                <p class="phonenumber" id="drv3phnno" style="display: none;">9940658810</p>
+                <img src="verified.png" alt="driverimg" width="28px" height="28px">
+                </div>
+                <button class="confirmbooking" onclick="cnfbuttontocnfpage(),getdriversname3(),updatingpickupincnfpage(),preventBack()">Confirm Booking</button>
+            </div>
+        </div>
+        <div class="driver1 driverfour">
+            <div class="driverimgbookingpage">
+                <img src="VinothR.jpeg" alt="driverimg" width="75px" height="75px" class="driverimg" id="driverimg4">
+            </div>
+            <div class="information">
+                <div class="drivernamebookpage">
+                <p class="name" id="name4">Vinoth R</p>
+                <p class="id1" id="id4" style="display: none;">250699</p>
+                <img src="ronak.png" alt="driverimg" width="90%" id="qrcode4" style="display: none;">
+                <p class="phonenumber" id="drv4phnno" style="display: none;">9487681161</p>
+                <img src="verified.png" alt="verified" width="28px" height="28px">
+                </div>
+                <button class="confirmbooking" onclick="cnfbuttontocnfpage(),getdriversname4(),updatingpickupincnfpage()">Confirm Booking</button>
+            </div>
+        </div>
+        <div class="driver1 driverfive">
+            <div class="driverimgbookingpage">
+                <img src="AnandS.jpg" alt="driverimg" width="75px" height="75px" class="driverimg" id="driverimg5">
+            </div>
+            <div class="information">
+                <div class="drivernamebookpage">
+                <p class="name" id="name5">G. Baskar</p>
+                <p class="id1" id="id5" style="display: none;">170385</p>
+                <img src="rounak4.png" alt="driverimg" width="90%" id="qrcode5" style="display: none;">
+                <p class="phonenumber" id="drv5phnno" style="display: none;">9994383844</p>
+                <img src="verified.png" alt="verified" width="28px" height="28px">
+                </div>
+                <button class="confirmbooking" onclick="cnfbuttontocnfpage(),getdriversname5(),updatingpickupincnfpage(),preventBack()">Confirm Booking</button>
+            </div>
+        </div>
+    </div>
+    <!--Driver div ends-->
+    <!--Places worth visiting-->
+    <div class="placestovisit" id="placestovisitbookingpage">
+        <h1 class="placeshead">
+            Places Worth Visiting
+        </h1>
+        <div class="placeimage">
+            <div class="placeone hotelone"></div>
+            <div class="placeone hoteltwo"></div>
+            <div class="placeone hotelthree"></div>
+            <div class="placeone hotelfour"></div>
+            <div class="placeone hotelfive"></div>
+            <div class="placeone hotelsix"></div>
+            <div class="placeone hotelseven"></div>
+            <div class="placeone hoteleight"></div>
+        </div>
+    </div>
+    <!--places to visit ends-->
+    <!--Ads div-->
+    <div class="ads"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

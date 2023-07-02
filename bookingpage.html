@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Ride | Automate</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="Style2.css">
+    <link rel="shortcut icon" href="logoautomate3.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <div class="headerinside">
+            <img src="logoautomate2sized.png" alt="AutomateVelloreLogo" width="150px">
+        </div>
+    </div>
+
+    <div class="pagination" id="pagination">
+        <div class="paginationinside" id="paginationinside">
+            <div class="pagination1 paginationsdiv" id="pagination1">
+                <img src="location.png" alt="AutomateVelloreLocation" width="30px">
+            </div>
+            <div class="pagination2 paginationsdiv" id="pagination2">
+                <img src="taxi-driver.png" alt="AutomateVelloreDrivers" width="30px">
+            </div>
+            <div class="pagination3 paginationsdiv" id="pagination3">
+                <img src="business-card.png" alt="AutomateVellorePersonalDetails" width="30px">
+            </div>
+            <div class="pagination4 paginationsdiv" id="pagination4">
+                <img src="check.png" alt="AutomateVelloreConfirm" width="30px">
+            </div>
+            <div class="pagination5 paginationsdiv" id="pagination5">
+                <img src="phone.png" alt="AutomateVelloreCall" width="30px">
+            </div>
+        </div>
+    </div>
+
+    <div class="mainform">
+    <div class="mainforminside">
+
+        <div class="Page1 pageform" id="page1">
+            <div class="pagehead page1head">
+                Book A Ride Now
+            </div>
+
+            <div class="pickupdropdiv">
+            <div class="pickupdropinside">
+                <div class="pickupinputdiv">
+
+                    <div class="logobook">
+                        <img src="picklocation.png" alt="AutomateVellorePickup" width="35px">
+                    </div>
+
+                    <div class="pickupinput">
+
+                        <label for="pickuplistinp" class="labelinput">From</label>
+
+
+                        <input list="pickuplist" id="pickuplistinp" class="pickuplistinp" name="pickuplistinp">
+
+                       
+                        <datalist id="pickuplist">
+                            <option value="#"></option>
+                            <option value="VIT Main Gate">VIT Main Gate </option>
+                            <option value="Katpadi railway station">Katpadi Railway Station</option>
+                            <option value="New Bus Stand">New Bus Stand</option>
+                            <option value="Green Circle">Green Circle</option>
+                            <option value="Vishnu Theatre">Vishnu Theatre</option>
+                            <option value="Vellore Kitchen">Vellore Kitchen</option>
+                            <option value="Karigiri Hills">Karigiri Hills</option>
+                            <!---->
+                            <option value="Singri Temple">Singri Temple</option>
+                            <!---->
+                            <!---->
+                            <option value="Palligonda Temple">Palligonda Temple</option>
+                            <!---->
+                            <!---->
+                            <option value="Virinjipuram Temple">Virinjipuram Temple</option>
+                            <!---->
+                            <!---->
+                            
+                            <!---->
+                            <!---->
+                            <option value="Tirthagiri Temple">Tirthagiri Temple</option>
+                            <!---->
+                            <!---->
+                            <option value="Perumalswamy Temple">Perumalswamy Temple</option>
+                            <!---->
+                            <option value="Golden Temple">Golden Temple</option>
+                            <option value="Chittoor Bus stand">Chittoor Bus stand</option>
+                            <option value="Vellore Fort">Vellore Fort</option>
+                            <option value="Balamathi Hills">Balamathi Hills</option>
+                            <option value="Green Tender Parks">Green Tender Parks</option>
+                            <option value="Mahadev Hills">Mahadev Hills</option>
+                            <option value="Gandhi Nagar">Gandhi Nagar</option>
+                            <option value="Vellore Kitchen">Vellore Kitchen</option>
+                            <option value="Rangalaya">Rangalaya</option>
+                            <option value="KFC">KFC</option>
+                            <option value="Hundred's Heritage">Hundred's Heritage</option>
+                            <option value="Fortune Parks">Fortune Parks</option>
+                            <option value="PVR Mall">PVR Mall</option>
+                            <option value="Oscar Theatre">Oscar Theatre</option>
+                            <option value="Gandhi Road">Gandhi Road</option>
+                            <option value="Jyothi Hotel">Jyothi Hotel</option>
+                            <option value="Barbeque Nation">Barbeque Nation</option>
+                            <option value="Benz Park">Benz Park</option>
+                            <option value="Khanna Fiesta">Khanna Fiesta</option>
+                            <option value="Darling Residency">Darling Residency</option>
+                            <option value="GRT Residency">GRT Residency</option>
+                            <option value="Annamalai Hotel">Annamalai Hotel</option>
+                            <option value="Srinivasa Hotel">Srinivasa Hotel</option>
+                            <option value="Pulusu">Pulusu</option>
+                            <option value="Aarya's Restaurant">Aarya's Restaurant</option>
+                            <option value="Namma Veedu Restaurant">Namma Veedu Restaurant</option>
+                            <option value="Pandyan Hotel">Pandyan Hotel</option>
+                            <option value="Royal Grand">Royal Grand</option>
+                            <option value="CMC Hospital">CMC Hospital</option>
+                            <option value="Naruvi Hospital">Naruvi Hospital</option>
+                            <option value="Ranipet CMC">Ranipet CMC</option>
+                            <option value="Bagayam Hospital">Bagayam Hospital</option>
+                            <option value="Vallimalai Temple">Vallimalai Temple</option>
+                            <option value="Cup and Saucer Waterfalls">Cup and Saucer Waterfalls</option>
+                            <option value="Collector's Office">Collector's Office</option>
+                            <option value="SMS Grand Inn">SMS Grand Inn</option>
+                            <option value="Hotel Alka">Hotel Alka</option>
+                            <option value="Mount Paradise">Mount Paradise</option>
+                            <option value="Grand Krishna Hotel">Grand Krishna Hotel</option>
+                            <option value="DMart">D-Mart</option>
+                            <option value="Vellore Zoo">Vellore Zoo</option>
+                            <option value="Hotel Essence">Hotel Essence</option>
+                            <option value="M Square">M Square</option>
+                            <option value="Grand Ganpat">Grand Ganpat</option>
+                            <option value="Arihant Inn">Arihant Inn</option>
+                            <option value="Millenium Residency">Millenium Residency</option>
+                            <option value="SGRT Residency">SGRT Residency</option>
+                            <option value="Kingsbury Fiesta">Kingsbury Fiesta</option>
+                            <option value="Prince Park">Prince Park</option>
+                            <option value="Vijayshree Inn">Vijayshree Inn</option>
+                            <option value="FAB Hotel Pranav Park">FAB Hotel Pranav Park</option>
+                            <option value="Surabhi International">Surabhi International</option>
+                            <option value="JRS Residency">JRS Residency</option>
+                            <option value="Pawan Parks">Pawan Park</option>
+                            <option value="River View Hotel">River View Hotel</option>
+                            <option value="Palm Tree Hotel">Palm Tree Hotel</option>
+                            <option value="Golden Gateway">Golden Gateway</option>
+                            <option value="Sri Balaji International">Sri Balaji International</option>
+                            <option value="Yaa Residency">Yaa Residency</option>
+                            <option value="Senthur Inn">Senthur Inn</option>
+                            <option value="Golden Fort">Golden Fort</option>
+                            <option value="BKS Residency">BKS Residency</option>
+                            <option value="Sri Murugan">Sri Murugan</option>
+                            <option value="Grand Chariot Hotel">Grand Chariot Hotel</option>
+                            <option value="Green Park">Green Park</option>
+                            <option value="Vaibhav Residency">Vaibhav Residency</option>
+                            <option value="Baby Residency">Baby Residency</option>
+                            <option value="Babu Naidu Residency">Babu Naidu Residency</option>
+                            <option value="Banu Residency">Banu Residency</option>
+                            <option value="Chella Krishna Residency">Chella Krishna Residency</option>
+                            <option value="SR Residency">SR Residency</option>
+                            <option value="Sri Vanadurga Peedam">Sri Vanadurga Peedam</option>
+                            <option value="Kannamangalam Reserve Forest">Kannamangalam Reserve Forest</option>
+                            <option value="Sri Selva Vinayagar Kovil">Sri Selva Vinayagar Kovil</option>
+                            <option value="St John's Church">St John's Church</option>
+                            <option value="Assumption Cathedral Church">Assumption Cathedral Church</option>
+                            <option value="Earth Plate">Earth Plate</option> 
+                            <option value="Kailash Parbat">Kailash Parbat</option> 
+                            <option value="Lalit Vihaar">Lalit Vihaar</option>                    <option value="Alankaar">Alankaar</option>                     
+    
+    
+                        </datalist> 
+
+
+                    </div>
+                </div>
+
+                <hr class="sep">
+
+
+                <div class="dropinputdiv">
+
+                    <div class="logobook">
+                        <img src="droplocatin.png" alt="AutomateVelloreDrop" width="35px">
+                    </div>
+
+                    <div class="dropinput">
+                        <label for="droplistinp" class="labelinput">To&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+
+                        <input list="droplist" id="droplistinp" class="droplistinp" name="droplistinp">
+
+                        <datalist id="droplist">
+                            <option value="#"></option>
+                            <option value="VIT Main Gate">VIT Main Gate </option>
+                            <option value="Katpadi railway station">Katpadi Railway Station</option>
+                            <option value="New Bus Stand">New Bus Stand</option>
+                            <option value="Green Circle">Green Circle</option>
+                            <option value="Vishnu Theatre">Vishnu Theatre</option>
+                            <option value="Vellore Kitchen">Vellore Kitchen</option>
+                            <option value="Karigiri Hills">Karigiri Hills</option>
+                            <!---->
+                            <option value="Singri Temple">Singri Temple</option>
+                            <!---->
+                            <!---->
+                            <option value="Palligonda Temple">Palligonda Temple</option>
+                            <!---->
+                            <!---->
+                            <option value="Virinjipuram Temple">Virinjipuram Temple</option>
+                            <!---->
+                            <!---->
+                            
+                            <!---->
+                            <!---->
+                            <option value="Tirthagiri Temple">Tirthagiri Temple</option>
+                            <!---->
+                            <!---->
+                            <option value="Perumalswamy Temple">Perumalswamy Temple</option>
+                            <!---->
+                            <option value="Golden Temple">Golden Temple</option>
+                            <option value="Chittoor Bus stand">Chittoor Bus stand</option>
+                            <option value="Vellore Fort">Vellore Fort</option>
+                            <option value="Balamathi Hills">Balamathi Hills</option>
+                            <option value="Green Tender Parks">Green Tender Parks</option>
+                            <option value="Mahadev Hills">Mahadev Hills</option>
+                            <option value="Gandhi Nagar">Gandhi Nagar</option>
+                            <option value="Vellore Kitchen">Vellore Kitchen</option>
+                            <option value="Rangalaya">Rangalaya</option>
+                            <option value="KFC">KFC</option>
+                            <option value="Hundred's Heritage">Hundred's Heritage</option>
+                            <option value="Fortune Parks">Fortune Parks</option>
+                            <option value="PVR Mall">PVR Mall</option>
+                            <option value="Oscar Theatre">Oscar Theatre</option>
+                            <option value="Gandhi Road">Gandhi Road</option>
+                            <option value="Jyothi Hotel">Jyothi Hotel</option>
+                            <option value="Barbeque Nation">Barbeque Nation</option>
+                            <option value="Benz Park">Benz Park</option>
+                            <option value="Khanna Fiesta">Khanna Fiesta</option>
+                            <option value="Darling Residency">Darling Residency</option>
+                            <option value="GRT Residency">GRT Residency</option>
+                            <option value="Annamalai Hotel">Annamalai Hotel</option>
+                            <option value="Srinivasa Hotel">Srinivasa Hotel</option>
+                            <option value="Pulusu">Pulusu</option>
+                            <option value="Aarya's Restaurant">Aarya's Restaurant</option>
+                            <option value="Namma Veedu Restaurant">Namma Veedu Restaurant</option>
+                            <option value="Pandyan Hotel">Pandyan Hotel</option>
+                            <option value="Royal Grand">Royal Grand</option>
+                            <option value="CMC Hospital">CMC Hospital</option>
+                            <option value="Naruvi Hospital">Naruvi Hospital</option>
+                            <option value="Ranipet CMC">Ranipet CMC</option>
+                            <option value="Bagayam Hospital">Bagayam Hospital</option>
+                            <option value="Vallimalai Temple">Vallimalai Temple</option>
+                            <option value="Cup and Saucer Waterfalls">Cup and Saucer Waterfalls</option>
+                            <option value="Collector's Office">Collector's Office</option>
+                            <option value="SMS Grand Inn">SMS Grand Inn</option>
+                            <option value="Hotel Alka">Hotel Alka</option>
+                            <option value="Mount Paradise">Mount Paradise</option>
+                            <option value="Grand Krishna Hotel">Grand Krishna Hotel</option>
+                            <option value="DMart">D-Mart</option>
+                            <option value="Vellore Zoo">Vellore Zoo</option>
+                            <option value="Hotel Essence">Hotel Essence</option>
+                            <option value="M Square">M Square</option>
+                            <option value="Grand Ganpat">Grand Ganpat</option>
+                            <option value="Arihant Inn">Arihant Inn</option>
+                            <option value="Millenium Residency">Millenium Residency</option>
+                            <option value="SGRT Residency">SGRT Residency</option>
+                            <option value="Kingsbury Fiesta">Kingsbury Fiesta</option>
+                            <option value="Prince Park">Prince Park</option>
+                            <option value="Vijayshree Inn">Vijayshree Inn</option>
+                            <option value="FAB Hotel Pranav Park">FAB Hotel Pranav Park</option>
+                            <option value="Surabhi International">Surabhi International</option>
+                            <option value="JRS Residency">JRS Residency</option>
+                            <option value="Pawan Parks">Pawan Park</option>
+                            <option value="River View Hotel">River View Hotel</option>
+                            <option value="Palm Tree Hotel">Palm Tree Hotel</option>
+                            <option value="Golden Gateway">Golden Gateway</option>
+                            <option value="Sri Balaji International">Sri Balaji International</option>
+                            <option value="Yaa Residency">Yaa Residency</option>
+                            <option value="Senthur Inn">Senthur Inn</option>
+                            <option value="Golden Fort">Golden Fort</option>
+                            <option value="BKS Residency">BKS Residency</option>
+                            <option value="Sri Murugan">Sri Murugan</option>
+                            <option value="Grand Chariot Hotel">Grand Chariot Hotel</option>
+                            <option value="Green Park">Green Park</option>
+                            <option value="Vaibhav Residency">Vaibhav Residency</option>
+                            <option value="Baby Residency">Baby Residency</option>
+                            <option value="Babu Naidu Residency">Babu Naidu Residency</option>
+                            <option value="Banu Residency">Banu Residency</option>
+                            <option value="Chella Krishna Residency">Chella Krishna Residency</option>
+                            <option value="SR Residency">SR Residency</option>
+                            <option value="Sri Vanadurga Peedam">Sri Vanadurga Peedam</option>
+                            <option value="Kannamangalam Reserve Forest">Kannamangalam Reserve Forest</option>
+                            <option value="Sri Selva Vinayagar Kovil">Sri Selva Vinayagar Kovil</option>
+                            <option value="St John's Church">St John's Church</option>
+                            <option value="Assumption Cathedral Church">Assumption Cathedral Church</option>
+                            <option value="Earth Plate">Earth Plate</option> 
+                            <option value="Kailash Parbat">Kailash Parbat</option> 
+                            <option value="Lalit Vihaar">Lalit Vihaar</option>                    <option value="Alankaar">Alankaar</option>                     
+    
+    
+                        </datalist> 
+
+
+
+
+                    </div>
+
+                </div>
+
+               
+            </div>
+            
+            </div>
+
+            <div class="peoplehosteldiv">
+
+                <div class="noofpeople">
+
+                    <div class="headpeople">
+                        No Of People
+                    </div>
+
+                    <select name="noofpeopleselect" id="noofpeopleselect" class="noofpeopleselect">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <div class="checkhostel">
+                    <div class="headpeople">
+                        Pickup From <br> Hostel
+                    </div>
+
+                    <div class="toggler">
+                        <input id="toggler-1" name="toggler-1" type="checkbox" value="1">
+                        <label for="toggler-1">
+                            <svg class="toggler-on" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                                <polyline class="path check" points="100.2,40.2 51.5,88.8 29.8,67.5"></polyline>
+                            </svg>
+                            <svg class="toggler-off" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                                <line class="path line" x1="34.4" y1="34.4" x2="95.8" y2="95.8"></line>
+                                <line class="path line" x1="95.8" y1="34.4" x2="34.4" y2="95.8"></line>
+                            </svg>
+                        </label>
+                    </div>
+                    <!--useinputid toggler1-->
+
+                </div>
+
+            </div>
+
+            <div class="proceedbutton1">
+                <button type="button" onclick="page1topage2(),getnoofpeople(),gettime(),Farecalculator(),pickupdropupdateinallpages()" class="proceedbutton">Proceed</button>
+            </div>
+        </div>
+
+        <div class="Page2 pageform" id="page2">
+            <div class="pagehead page2head">
+                Choose Your Driver
+            </div>
+
+            <div class="availabledriversdiv">
+            <div class="availabledriversdivinside">
+
+
+                <div class="driver1 drivers">
+
+                    <div class="driver1img driverimg"></div>
+
+                    <div class="driver1info driverinfo">
+                        <p class="name1 namedriver" id="name1">
+                            Anand S
+                        </p>
+                        <button type="button"  class="confirmridebutton" onclick="driver1details(),driver1infoupdate(),page2topage3()">Confirm Ride</button>
+
+                        <p id="phonenumber1" style="display: none;">7338133731</p>
+                        <p id="autonumber1" style="display: none;">
+                            TN23 BF 8709
+                        </p>
+                        <p id="id1" style="display: none;">081083</p>
+                        <p id="language1" style="display: none;">Hindi , Kannada , Tamil , Telugu , English</p>
+
+
+
+                    </div>
+                </div>
+
+                <div class="driver2 drivers">
+
+                    <div class="driver2img driverimg"></div>
+
+                    <div class="driver2info driverinfo">
+                        <p class="name2 namedriver" id="name2">
+                            V Vijay Kumar
+                        </p>
+                        <button type="button" class="confirmridebutton" onclick="driver2details(),driver2infoupdate(),page2topage3()">Confirm Ride</button>
+
+                        <p id="phonenumber2" style="display: none;">9087408449</p>
+                        <p id="autonumber2" style="display: none;">
+                            TN23 BH 4419
+                        </p>
+                        <p id="id2" style="display: none;">270494</p>
+                        <p id="language2" style="display: none;">Hindi , Kannada , Tamil , English</p>
+                    </div>
+
+                </div>
+
+                <div class="driver3 drivers">
+
+                    <div class="driver3img driverimg"></div>
+
+                    <div class="driver3info driverinfo">
+                        <p class="name3 namedriver" id="name3">
+                            Anand D
+                        </p>
+                        <button type="button" class="confirmridebutton" onclick="driver3details(), driver3infoupdate(),page2topage3()">Confirm Ride</button>
+
+                        <p id="phonenumber3" style="display: none;">7338133731</p>
+                        <p id="autonumber3" style="display: none;">
+                            TN23 AK 2412
+                        </p>
+                        <p id="id3" style="display: none;">070987</p>
+                        <p id="language3" style="display: none;">Hindi , Telugu , Tamil </p>
+                    </div>
+
+                </div>
+
+                <div class="driver4 drivers">
+
+                    <div class="driver4img driverimg"></div>
+
+                    <div class="driver4info driverinfo">
+                        <p class="name4 namedriver" id="name4">
+                            G. Baskar
+                        </p>
+                        <button type="button" class="confirmridebutton" onclick="driver4details(),driver4infoupdate(),page2topage3()">Confirm Ride</button>
+
+                        <p id="phonenumber4" style="display: none;">7338133731</p>
+                        <p id="autonumber4" style="display: none;">
+                            TN23 CB 0823
+                        </p>
+                        <p id="id4" style="display: none;">170385</p>
+                        <p id="language4" style="display: none;">Hindi , Telugu , Tamil </p>
+                    </div>
+
+                </div>
+
+                <div class="driver5 drivers">
+
+                    <div class="driver5img driverimg"></div>
+
+                    <div class="driver5info driverinfo">
+                        <p class="name5 namedriver" id="name5">
+                            V Vinoth R
+                        </p>
+                        <button type="button" class="confirmridebutton" onclick="driver5details(),driver5infoupdate(),page2topage3()">Confirm Ride</button>
+
+                        <p id="phonenumber5" style="display: none;">7338133731</p>
+                        <p id="autonumber5" style="display: none;">
+                            TN23 CC 4998
+                        </p>
+                        <p id="id5" style="display: none;">250699</p>
+                        <p id="language5" style="display: none;">Hindi , Tamil </p>
+                    </div>
+
+                </div>
+
+
+            </div>
+            </div>
+            <div class="mainfarediv">
+            <div class="faredisplay">
+                Fare -&nbsp; <span id="mainfare"></span>&nbsp; Rs/-
+            </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>  
+
+        <div class="Page3 pageform" id="page3">
+            <div class="pagehead page2head">
+                Enter Your Details
+            </div>
+
+            <div class="passengerdetails">
+
+                <p for="passengername" class="page3label">Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <input type="text" name="Passengername" id="passengername" class="passnameinp passinp" required>
+
+                <p for="passengerphone" class="page3label">Phone Number</p>
+                <input type="number" name="Passengerphone" id="passengerphone" class="passphoneinp passinp" required>
+
+                <p for="passengeremail" class="page3label">Email Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <input type="email" name="Passengeremail" id="passengeremail" class="passemailinp passinp">
+
+                <div class="buttontoproceed">
+                    <button type="button" class="proceedbutton" onclick="return passengerdetails(),updateinconfirmpage()">Proceed</button>
+                </div>
+                
+
+            </div>
+
+        </div>
+
+        <div class="Page4 pageform" id="page4">
+            <div class="pagehead page4head">
+                Confirm Your Ride
+            </div>
+
+            <div class="driverconfirmdiv">
+            <div class="driverconfirminside">
+                <div class="driverconfirmimagediv">
+                    <div class="driverconfirmimageinside" id="driverconfirmimage"></div>
+
+                </div>
+
+                <div class="driverconfirminfodiv">
+                    <div class="driverinfodivinside">
+                        <p id="driverconfirmname">
+                            Anand S
+                        </p>
+                        <p id="idconfirmdriver">
+                            ID - 081083
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="pickupconfirmdiv">
+            <div class="pickupconfirminside">
+                <div class="pickconfirmlogo">
+                    <img src="location.png" alt="AutomateVelloreLocation" width="40px">
+                </div>
+                <div class="pickconfirmlocation" id="pickconfirmlocation">
+                    VIT Main Gate
+                </div>
+            </div>
+            </div>
+
+            <div class="dropconfirmdiv">
+                <div class="dropconfirminside">
+                    <div class="dropconfirmlogo">
+                        <img src="droplocatin.png" alt="AutomateVelloreLocation" width="40px">
+                    </div>
+                    <div class="dropconfirmlocation" id="dropconfirmlocation">
+                        Katpadi Railway Station
+                    </div>
+                </div>
+            </div>
+
+            <div class="fareconfirmdiv">
+                <div class="fareconfirminside">
+                    Fare - &nbsp; <span id="fareconfirm">
+
+                    </span>&nbsp; Rs/-
+                </div>
+            </div>
+
+            <div class="button4">
+            <button type="button" class="tocallpage proceedbutton" onclick="page4topage5() , sender()">
+                Confirm
+            </button>
+            </div>
+        </div>
+        
+        <div class="Page5 pageform" id="page5">
+            <div class="pagehead page4head">
+                Call Your Driver
+            </div>
+
+            <div class="driverconfirmdiv">
+                <div class="driverconfirminside">
+                    <div class="driverconfirmimagediv">
+                        <div class="driverconfirmimageinside" id="driverconfirmimage"></div>
+    
+                    </div>
+    
+                    <div class="driverconfirminfodiv">
+                        <div class="driverinfodivinside">
+                            <p id="driverconfirmname2">
+                                Anand S
+                            </p>
+                            <p id="idconfirmdriver2">
+                                ID - 081083
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vehicleinfo">
+            <div class="vehicleinfoinside">
+                <div class="uppervehicleinfo">
+                    <div class="autonumber">
+                        <p class="autohead" id="Autonumbercallpage">Auto Number</p>
+                        
+                    </div>
+                    <hr class="versep">
+                    <div class="languages">
+                        <p class="autohead langhead">Languages</p>
+                        <span id="languagecallpage">
+                        
+                    </span>
+                    </div>
+                </div>
+                <hr class="sep sep2">
+                <div class="lowervehicleinfo">
+                    <div class="autonumber">
+                        <p class="autohead datehead">Date</p>
+                        <span id="realdatecallpage"></span>
+                        
+                    </div>
+                    <hr class="versep">
+                    <div class="languages time">
+                        <p class="autohead timehead">Time</p>
+                        <span id="realtimecallpage"></span>
+                       
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="fareconfirmdiv farecall">
+                <div class="fareconfirminside">
+                    Fare - &nbsp; <span id="farecall">
+
+                    </span>&nbsp; Rs/-
+                </div>
+            </div>
+
+            <div class="callbuttondiv">
+            <a href="tel:+917338133731" class="callbutton" target="_self" id="maincallbutton">
+              <div class="callbutton">
+                Call Driver
+              </div>  </a>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </div>
+    </div>
+
+    <div class="emptyspace">
+
+    </div>
+
+    
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+        function displaysecond(){
+            document.getElementById("secondpage").style.display = "block";
+        }
+        
+    </script>
+    <script src="script2.js">
+
+    </script>
+</body>
+</html>

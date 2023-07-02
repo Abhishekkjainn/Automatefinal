@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automate | Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="MainlogoAutomate.png">
+    <link rel="apple-touch-icon" href="MainlogoAutomate.png">
+    <meta name="description" content="Make contacting and booking autorickshaws in Vellore a breeze with our website. Find reliable contact information and streamline the booking process for hassle-free transportation. Discover the convenience of commuting in Vellore with our user-friendly platform.">
+    <style>
+        a{
+            display: flex;
+            text-decoration: none;
+        }
+        .foundergmail{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3px;
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <header class="Header">
+            <img src="logoautomate2.png" alt="" class="headerimage" width="150px">
+        </header>
+        <!--loader-->
+        <div class="preloader" id="preloader">
+        <svg class="pl" viewBox="0 0 160 160" width="160px" height="160px" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+					<stop offset="0%" stop-color="#000"></stop>
+					<stop offset="100%" stop-color="#fff"></stop>
+				</linearGradient>
+				<mask id="mask1">
+					<rect x="0" y="0" width="160" height="160" fill="url(#grad)"></rect>
+				</mask>
+				<mask id="mask2">
+					<rect x="28" y="28" width="104" height="104" fill="url(#grad)"></rect>
+				</mask>
+			</defs>
+			
+			<g>
+				<g class="pl__ring-rotate">
+					<circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(223,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
+				</g>
+			</g>
+			<g mask="url(#mask1)">
+				<g class="pl__ring-rotate">
+					<circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(193,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
+				</g>
+			</g>
+			
+			<g>
+				<g stroke-width="4" stroke-dasharray="12 12" stroke-dashoffset="12" stroke-linecap="round" transform="translate(80,80)">
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-135,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-90,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-45,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(0,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(45,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(90,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(135,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(180,0,0) translate(0,40)"></polyline>
+				</g>
+			</g>
+			<g mask="url(#mask1)">
+				<g stroke-width="4" stroke-dasharray="12 12" stroke-dashoffset="12" stroke-linecap="round" transform="translate(80,80)">
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-135,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-90,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-45,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(0,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(45,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(90,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(135,0,0) translate(0,40)"></polyline>
+					<polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(180,0,0) translate(0,40)"></polyline>
+				</g>
+			</g>
+			
+			<g>
+				<g transform="translate(64,28)">
+					<g class="pl__arrows" transform="rotate(45,16,52)">
+						<path fill="hsl(3,90%,55%)" d="M17.998,1.506l13.892,43.594c.455,1.426-.56,2.899-1.998,2.899H2.108c-1.437,0-2.452-1.473-1.998-2.899L14.002,1.506c.64-2.008,3.356-2.008,3.996,0Z"></path>
+						<path fill="hsl(223,10%,90%)" d="M14.009,102.499L.109,58.889c-.453-1.421,.559-2.889,1.991-2.889H29.899c1.433,0,2.444,1.468,1.991,2.889l-13.899,43.61c-.638,2.001-3.345,2.001-3.983,0Z"></path>
+					</g>
+				</g>
+			</g>
+			<g mask="url(#mask2)">
+				<g transform="translate(64,28)">
+					<g class="pl__arrows" transform="rotate(45,16,52)">
+						<path fill="hsl(333,90%,55%)" d="M17.998,1.506l13.892,43.594c.455,1.426-.56,2.899-1.998,2.899H2.108c-1.437,0-2.452-1.473-1.998-2.899L14.002,1.506c.64-2.008,3.356-2.008,3.996,0Z"></path>
+						<path fill="hsl(223,90%,80%)" d="M14.009,102.499L.109,58.889c-.453-1.421,.559-2.889,1.991-2.889H29.899c1.433,0,2.444,1.468,1.991,2.889l-13.899,43.61c-.638,2.001-3.345,2.001-3.983,0Z"></path>
+					</g>
+				</g>
+			</g>
+		</svg>
+        </div>
+        <!--loader over-->
+        <div class="heading">
+            <h1 class="mainheading">
+                Book Autos
+            </h1>
+            <h3 class="subheading">
+                In <span class="colorsub ">Vellore</span> with Automate
+            </h3>
+        </div>
+        <!--Booking page div-->
+        <div class="bookpagediv">
+            <div class="bookdivmain">
+                <button class="bookridebutton" onclick="booknowtobookpage()">
+                    Book Now
+                </button>
+            </div>
+            <div class="knowfareautodiv">
+                <div class="knowfarediv">
+                    <img src="fare.png" alt="" class="knowfareimg" width="70px" height="70px">
+                    <button class="knowfarebutton" onclick="knowfareredirect()">
+                        Know Fare
+                    </button> 
+                    
+                </div> 
+
+                <div class="autofordaydiv">
+                    <div class="containerauto">
+                        <div class="autoanimconatiner">
+                        <div class="carAnimation">
+                            <div class="road"></div>
+                            <div class="car">
+                                <img src="animauto.png" alt="" width="110px">
+                            </div>
+                            <div class="wheels">
+                                <div class="leftwheel">
+                                    <img src="tyre-removebg-preview.png" alt="" class="lwheel" width="20px">
+                                </div>
+                                <div class="rightwheel">
+                                    <img src="tyre-removebg-preview.png" alt="" class="rwheel" width="20px">
+                                </div>
+                            </div>
+                            <div class="clouds"></div>
+                            <div class="clouds2"></div>
+                        </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <!--booking page div ends-->
+        <!--great deals div-->
+        <div class="greatdealsdiv">
+            <h2 class="greatdealheading">
+                Auto's with Best Deals
+            </h2>
+            <div class="categoriescarousel">
+                <button class="cat1carousel" onclick="mountaincattomountainpage()">
+                    <img src="mountain.png" alt="" class="catimg" width="66px" height="66px">
+                    <p class="cattext">Mountains
+                    </p>
+                </button>
+                <button class="cat1carousel cat2carousel" onclick="templecattotemplepage()">
+                    <img src="temple.png" alt="" class="catimg" width="66px" height="66px">
+                    <p class="cattext">Temples
+                    </p>
+                </button>
+                <button class="cat1carousel cat3carousel" onclick="restaurantcattorestaurantpagepage()">
+                    <img src="cutlery.png" alt="" class="catimg" width="66px" height="66px">
+                    <p class="cattext">Restauraunts
+                    </p>
+                </button>
+                <button class="cat1carousel cat4carousel" onclick="hotelcattohotelpage()">
+                    <img src="hotel.png" alt="" class="catimg" width="66px" height="66px">
+                    <p class="cattext">Hotels
+                    </p>
+                </button>
+                <button class="cat1carousel cat5carousel" onclick="hospitalcattohospitalpage()">
+                    <img src="hospital.png" alt="" class="catimg" width="66px" height="66px">
+                    <p class="cattext">Hospitals
+                    </p>
+                </button>
+                <button class="cat1carousel cat6carousel" onclick="theatrecattotheatrepage()">
+                    <img src="cinema.png" alt="" class="catimg" width="66px" height="66px">
+                    <p class="cattext">Movie Theatre
+                    </p>
+                </button>
+                
+            </div>
+        </div>
+        <!--Great deals div done-->
+        <!--Best Places In Vellore div-->
+        <div class="bestplacesdiv">
+            <h3 class="bestplacesheading">Best Places in Vellore</h3>
+            <div class="placescarousel">
+                <div class="place1">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front VITVellore">
+                                
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title">VIT Vellore</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="place1 place2">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front Karigirihills">
+                                
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title">Karigiri Hills</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="place1 place3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front Laxminarayantemple">
+                                
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title">Laxminarayan <br> Temple</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="place1 place4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front Vellorefort">
+                                
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title">Vellore Fort</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="place1 place5">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front Balamathihills">
+                            
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title">Balamathi <br> Hills</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="place1 place6">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front Mahadevhills">
+                                
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title">Mahadev Hills</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="place1 place7">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front Vallimalaitemple">
+                                
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title">Vallimalai Temple</p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="place1 place8">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front Ratnagiritemple">
+                                
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title">Ratnagiri Temple</p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="place1 place9">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front Virinjipuramtemple">
+                                
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title">Virinjipuram Temple</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!--best place div end-->
+        <!--Offers div-->
+        <div class="bestoffersdiv">
+            <h2 class="offerdivhead">Best Offers in Vellore</h2>
+            <div class="offercarousel">
+                <button class="offer1 offerone" onclick="offer1buttontooffer1page()">
+                    <div class="firsttextoffer">
+                    <!-- <h2 class="offer1head">Offer 1</h2> -->
+                    <p class="locationsoffer">Laxminarayan Temple + <br>Balamathi Hills + <br>Vellore Fort</p>
+                </div>
+                <div class="imgpriceoffer">
+                    <img src="offer1img.png" alt="" class="offerimg" width="70px">
+                    <h2 class="priceoffer">2000 Rs/-</h2>
+                </div>
+
+                </button>
+                <button class="offer1 offertwo" onclick="offer2buttontooffer2page()">
+                    <div class="firsttextoffer">
+                        <!-- <h2 class="offer1head">Offer 2</h2> -->
+                        <p class="locationsoffer">Vellore Fort + <br>Ratnagiri Temple + <br>TIrthagiri Temple</p>
+                    </div>
+                    <div class="imgpriceoffer">
+                        <img src="offer2img.png" alt="" class="offerimg" width="70px">
+                        <h2 class="priceoffer">2000 Rs/-</h2>
+                    </div>
+    
+                </button>
+                <button class="offer1 offerthree" onclick="offer3buttontooffer3page()">
+                    <div class="firsttextoffer">
+                        <!-- <h2 class="offer1head">Offer 3</h2> -->
+                        <p class="locationsoffer">Vellore Zoo + <br>Singri Temple + <br>Vellore Fort + <br>
+                        Laxminarayan Temple</p>
+                    </div>
+                    <div class="imgpriceoffer">
+                        <img src="offer3img.png" alt="" class="offerimg" width="70px">
+                        <h2 class="priceoffer">3500 Rs/-</h2>
+                    </div>
+    
+                </button>
+                <button class="offer1 offerfour" onclick="offer4buttontooffer4page()">
+                    <div class="firsttextoffer">
+                        <!-- <h2 class="offer1head">Offer 4</h2> -->
+                        <p class="locationsoffer">Mahadev Hills + <br>Palligonda Temple + <br>Viranjpuram Temple + <br>Tirupati Balaji(Vellore)</p>
+                    </div>
+                    <div class="imgpriceoffer">
+                        <img src="offer4img.png" alt="" class="offerimg" width="70px">
+                        <h2 class="priceoffer">2000 Rs/-</h2>
+                    </div>
+    
+                </button>
+            </div>
+            <div class="bottomgap"></div>
+        </div>
+        <!--offers div ends-->
+        <!--footer-->
+        <div class="page5 pagefooter">
+            <div class="footercontainer">
+            <div class="companyname">
+                
+                <!-- <div class="namefooter">Automate</div> -->
+            </div>
+            <div class="footercontent">
+                <div class="driverssection">
+                    <h1 class="footerheading">About Drivers</h1>
+                    <a href="https://drive.google.com/file/d/1HeAQ7LCbjLCyYTuTdz-hL0XI7Mrbl3Yo/view?usp=drive_link" class="dlink" target="_blank">Terms and Conditions</a>
+                    <a href="https://docs.google.com/forms/d/157aMK-PzLkmWT21EusZ5fC2HXCJBjFwfIRaM-7B3K0I/edit#settings" class="dlink" target="_blank">Join Us</a>
+                </div>
+                <div class="automatesection">
+                    <h1 class="footerheading">About Automate</h1>
+                    <a href="https://drive.google.com/file/d/1HeAQ7LCbjLCyYTuTdz-hL0XI7Mrbl3Yo/view?usp=drive_link" class="dlink" target="_blank">About Us</a>
+                    <a href="Founders.html" class="dlink">Founders</a>
+                    <a href="#" class="dlink" aria-disabled="true">Contact Us</a>
+                </div>
+                <div class="socialmedia">
+                    
+                    <button class="fa fa-instagram" onclick="automateinsta()"></button>
+                    <button class="fa fa-linkedin" onclick="automatelinkedin()"></button>
+                    <a class="fa fa-google foundergmail" href="mailto:automatevellore@gmal.com"></a>
+                </div>
+            </div>
+            
+            </div>
+            <div class="indexspace"></div>
+        </div>
+        <!--footer ends-->
+        
+    </div>
+    <script src="script.js"></script>
+    <script>  
+    //loader animator
+    let loader = document.getElementById("loader");
+    window.addEventListener("load", function(){
+    loader.style.display = "none";
+}) 
+
+   
+    </script>
+</body>
+</html>
